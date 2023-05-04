@@ -2,6 +2,7 @@ package Airline_Booking;
 
 import java.util.ArrayList;
 
+
 public class Musteri {
     private int musteri_id;
     private String musteri_adi;
@@ -153,6 +154,11 @@ public class Musteri {
         
         Rezervasyon rezervasyon = new Rezervasyon(1, 123, "2023-05-04", 12);
         rezervasyon.Rezervasyon_olustur();
+        
+        //Odeme ve Ödeme yötemi
+        Factory factory = new Factory();
+        Odeme odeme = new Odeme(factory);
+        odeme.Odeme_hesapla("kredi_karti");
         
         
         }
