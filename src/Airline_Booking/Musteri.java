@@ -93,13 +93,19 @@ public class Musteri {
 
     // Add a new customer to the ArrayList
     public static void Musteri_ekle(Musteri customer) {
-        customers.add(customer);
+        
+    	
+    	customers.add(customer);
         System.out.println("");
         System.out.println("****************Müsteri Bilgileri************");
         System.out.println("Musteri Adi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
         System.out.println("Musteri Kullanici Adı: " + customer.musteri_kulladi + " (Mail Adresi: " + customer.musteri_mail + ")");
         System.out.println("****************Müsteri Bilgileri************");
         System.out.println("");
+        
+        
+        
+        
     }
 
     public void Musteri_sil() {
@@ -148,11 +154,13 @@ public class Musteri {
         System.out.print("Enter new customer name: ");
         String newName = input.next();
         customer.musteri_adi = newName;
+        System.out.println("");
+        System.out.println("*****************************************************");
         System.out.println("Customer updated: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
     }
     
     public static void main(String[] args) {
-        // Müşteri oluştur.
+        //1. Müşteriyi oluştur.
     	
     	
         Musteri customer = new Musteri.Builder()
@@ -168,42 +176,110 @@ public class Musteri {
                 .build();
         customer.Musteri_ekle(customer);
         
+        
 
         // Sefer oluşturuldu
-    	Sefer sefer = new Sefer();
-        Ucak ucak = new Ucak();
-        
-     
+    	Sefer sefer = new Sefer(1, 8844, "Istanbul-Paris", "Paris", "2755");
+    	sefer.seferYazdir(sefer);
+    	
+        Ucak ucak = new Ucak(1, "TK1233", "Boeing", "737-800", "Dar Gövde", 156);
+    
+     ucak.ucakYazdir(ucak);
    
-        sefer.olusturSefer(ucak);
+     
+       
         
         if (ucak == null) {System.out.println("Uçak Bulunamadı....");
         }
         else {
         	
+        	//Singelton class datası yazdırılıyor
+        	Havalimani istanbulAirport = Havalimani.getInstance();
+        	   istanbulAirport.setHavalimaniKodu("IST");
+        	   System.out.println("********************************************************");
+        	   System.out.println("Havalimanı kodu  Istanbul Havalimanı için: " + istanbulAirport.getirHavalimaniKodu());
+        	   System.out.println("********************************************************");
+        	
         // Uçuş Kontrol Mediator Class ile kontrol sağlanıyor
         Ucuskontrol ucuskontrol = new Ucuskontrol();
-        ucuskontrol.kontrolUcus(ucak, sefer);
+        ucuskontrol.kontrolUcus(ucak, sefer);}
 
         // Print flight information
         
         //Odeme ve Ödeme yötemi ve bilet'in alınmıştır
         Factory factory = new Factory();
         Odeme odeme = new Odeme(factory);
-        odeme.Odeme_hesapla("kredi_karti");
+        odeme.Odeme_kredikartihesapla("kredi_karti");
+        
+        
         
         //Odeme yapıldı ise rezervasyonu gösterme
         if (odeme.equals(factory)==true) {
        
         Rezervasyon rezervasyon = new Rezervasyon(1, 123, "2023-05-04", 12);
         rezervasyon.Rezervasyon_olustur();
-        
         }
+        
+        //2.Müşteriyi oluştur.
+        Musteri customer1 = new Musteri.Builder()
+                .musteri_id(2)
+                .musteri_adi("Smith Lue")
+                .musteri_kulladi("simlue")
+                .musteri_sifre("sword")
+                .musteri_mail("simlue@example.com")
+                .musteri_adres("100 Host St")
+                .musteri_tel(5551234)
+                .musteri_yemektercihi("Carnivar")
+                .musteri_vipkod(123)
+                .build();
+        customer1.Musteri_ekle(customer1);
+        
+      // 2.Sefer oluşturuldu
+    	Sefer sefer2 = new Sefer(2, 2233, "Istanbul-Berlin", "Berlin", "8857");
+    	sefer2.seferYazdir(sefer2);
+        Ucak ucak2 = new Ucak();
+        
+        //*****2.Uçak klonlandı ve id ile koltuk sayısı değerleri güncellendi***
+        ucak2.clone();
+        ucak2.setUcak_id(2);
+        ucak2.setUcak_koltuksayisi(200);
+        ucak2.ucakYazdir(ucak2);
+        
+        if (ucak2 == null) {System.out.println("Uçak Bulunamadı....");
+        }
+        else {
+        	
+        	//Singelton class datası yazdırılıyor
+        	Havalimani istanbulAirport = Havalimani.getInstance();
+     	   istanbulAirport.setHavalimaniKodu("JFK");
+     	   System.out.println("********************************************************");
+     	   System.out.println("Havalimanı kodu  John F KENEDY Havalimanı için: " + istanbulAirport.getirHavalimaniKodu());
+     	   System.out.println("********************************************************");
+     	
+        // Uçuş Kontrol Mediator Class ile kontrol sağlanıyor
+        Ucuskontrol ucuskontrol2 = new Ucuskontrol();
+        ucuskontrol2.kontrolUcus(ucak2, sefer2);}
+
+   
+        
+        //Odeme ve Ödeme yötemi ve biletalınmıştır
+        Factory factory1 = new Factory();
+        Odeme odeme1 = new Odeme(factory1);
+        odeme1.Odeme_nakithesapla("Nakit");
+        
+        
+      //Odeme yapıldı ise rezervasyonu gösterme
+        if (odeme.equals(factory)==true) {
+       
+        Rezervasyon rezervasyon = new Rezervasyon(3, 123, "2023-05-03", 1);
+        rezervasyon.Rezervasyon_olustur();
+        }
+       
         
         
         }
         
         
 }
-}
+
 

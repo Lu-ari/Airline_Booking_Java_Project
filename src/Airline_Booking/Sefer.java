@@ -13,59 +13,33 @@ public Sefer() {
 
 }
 
-public void olusturSefer( Ucak ucak) {
-	
-   
-	Sefer sefer = new Sefer();
-    sefer.setSeferId(456);
-    sefer.setSeferNo(789);
-    sefer.setSeferAdi("Istanbul - Paris");
-    sefer.setSeferDestinasyon("Paris");
-    sefer.setSeferUcuskodu("TK123");
- // Yapılandırıcı implemantasyonu
-	
- 	Ucak ucak1 = new Ucak();
- 	ucak1.setUcak_id(1);
- 	ucak1.setUcak_kuyrukkod("TK123");
- 	ucak1.setUcak_marka("Boeing");
- 	ucak1.setUcak_model("737");
- 	ucak1.setUcak_govdetipi("Dar gövde");
- 	ucak1.setUcak_koltuksayisi(200);
 
- 	// ucak1 objesini klonla
- 	Ucak ucak2 = ucak1.clone();
- 	ucak2.setUcak_id(2);
- 	ucak2.setUcak_koltuksayisi(183);
- 	
- 	System.out.println("*****************************Klonlanan Uçak Bilgisi************************");
- 	System.out.println("Uçak ID'si: " + ucak2.getUcak_id());
- 	System.out.println("Uçuş Numarası: " + ucak2.getUcak_kuyrukkod());
- 	System.out.println("Uçak Adı: " + ucak2.getUcak_marka());
- 	System.out.println("Hedef: " + ucak2.getUcak_model());
- 	System.out.println("Uçak Kodu: " + ucak2.getUcak_koltuksayisi());
-     System.out.println("*****************************Klonlanan Uçak Bilgisi************************");
-     System.out.println("");
-     
- 	if (ucak2 != null) {//Klonlanmış uçakla seyahet bilgisi basılmıştır.
-    	 
-    System.out.println("*****************************Flight Information:************************");
-    System.out.println("ID: " + sefer.getSeferAdi());
-    System.out.println("Uçuş Numarası: " + sefer.getSeferNo());
-    System.out.println("Uçuş Adı: " + sefer.getSeferAdi());
-    System.out.println("Hedef: " + sefer.getSeferDestinasyon());
-    System.out.println("Uçak Kodu: " + sefer.getSeferUcuskodu());
-    System.out.println("*****************************Flight Information:************************");
-    System.out.println("");
-   
-  
-    
-        
-    } else {
-        System.out.println("Uçak bilgisi bulunanamaştır");//Observer class gereği Eğer uçak yoksa bilet basılamamaktadır. 
-    }
+public Sefer(int sefer_id, int sefer_no, String sefer_adi,String sefer_destinasyon, String sefer_ucuskodu) {
+    this.sefer_id = sefer_id;
+    this.sefer_no = sefer_no;
+    this.sefer_adi = sefer_adi;
+    this.sefer_destinasyon = sefer_destinasyon;
+    this.sefer_ucuskodu = sefer_ucuskodu;
 }
 
 
+public void seferYazdir(Sefer sefer) {
+	Sefer sefer1 = new Sefer (sefer_id,sefer_no,sefer_adi,sefer_destinasyon,sefer_ucuskodu);
+	System.out.println("*****************************Uçuş Bilgisi************************");
+    System.out.println("ID: " + getSeferAdi());
+    System.out.println("Uçuş Numarası: " + getSeferNo());
+    System.out.println("Uçuş Adı: " + getSeferAdi());
+    System.out.println("Hedef: " + getSeferDestinasyon());
+    System.out.println("Uçak Kodu: " + getSeferUcuskodu());
+    System.out.println("*****************************Uçuş Bilgisi************************");
+    System.out.println("");
+   
+    }
+
+public Ucak ucakKlonla(Ucak ucak) {
+    Ucak clonedUcak = ucak.clone(); // clone the Ucak object
+    return clonedUcak;
+}
 
 public void sorgulaSefer() {
    // Implementation of observer design pattern for querying existing flights
@@ -75,7 +49,6 @@ public void guncelleSefer() {
    // Implementation of observer design pattern for updating existing flights
 
 }
-
 
 
 

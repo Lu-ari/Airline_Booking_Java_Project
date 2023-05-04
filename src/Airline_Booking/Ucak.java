@@ -11,6 +11,25 @@ public class Ucak  {
 
     public Ucak() {
         // Constructor implementation
+    	
+    	
+         
+    }
+    
+    public static Ucak ucakOlustur(int ucak_id, String ucak_kuyrukkod, String ucak_marka, String ucak_model, String ucak_govdetipi, int ucak_koltuksayisi) {
+    	 Ucak ucak = new Ucak(ucak_id, ucak_kuyrukkod, ucak_marka, ucak_model, ucak_govdetipi, ucak_koltuksayisi);
+        return ucak;
+    }
+    public void ucakYazdir(Ucak ucak) {
+    	 Ucak ucak1 = new Ucak(ucak_id, ucak_kuyrukkod, ucak_marka, ucak_model, ucak_govdetipi, ucak_koltuksayisi);
+    	System.out.println("*****************************Uçak Bilgisi************************");
+     	System.out.println("Uçak ID'si: " + getUcak_id());
+     	System.out.println("Uçuş Numarası: " + getUcak_kuyrukkod());
+     	System.out.println("Uçak Adı: " + getUcak_marka());
+     	System.out.println("Hedef: " + getUcak_model());
+     	System.out.println("Uçak Kodu: " + getUcak_koltuksayisi());
+         System.out.println("*****************************Uçak Bilgisi************************");
+         System.out.println("");
     }
 
     public Ucak(int ucak_id, String ucak_kuyrukkod, String ucak_marka, String ucak_model, String ucak_govdetipi, int ucak_koltuksayisi) {

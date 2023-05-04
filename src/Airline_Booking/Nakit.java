@@ -11,6 +11,14 @@ public class Nakit extends OdemeYontemi {
 
     public void Nakit_al() {
         // implementation for getting cash details
+    	Nakit Nakit = new Nakit(Nakit_tutar,Nakit_tipi );
+      
+    	
+    	System.out.println("**************************Nakit Bilgileri****************************************");
+        System.out.println("Ödenen Tutar: " + getNakit_tutar());
+        System.out.println("Ödenen Para Cinsi: " + getNakit_tipi() );
+        System.out.println("**************************Nakit Bilgileri****************************************");
+        System.out.println("");
     }
 
     public int getNakit_tutar() {

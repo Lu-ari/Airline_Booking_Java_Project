@@ -22,14 +22,22 @@ public class Ekonomi implements Bilet {
 
     @Override
     public void Bilet_olustur() {
-    	Bilet newBilet = new Ekonomi(Ekonomik_ekstrabagaj);
-
-        // Then, set the properties of the new Bilet object
-        newBilet.setBiletId(biletId);
-        newBilet.setBiletNo(biletNo);
-        newBilet.setBiletFiyat(biletFiyat);
-        newBilet.setBiletTarih(biletTarih);
-        newBilet.setBiletKoltukNo(biletKoltukNo);
+    	
+    	 Ekonomi ekonomiBilet = new Ekonomi("10kg");
+         ekonomiBilet.setBiletId(1);
+         ekonomiBilet.setBiletNo(1234);
+         ekonomiBilet.setBiletFiyat(500);
+         ekonomiBilet.setBiletTarih("2023-05-10");
+         ekonomiBilet.setBiletKoltukNo(15);
+         
+         System.out.println("**************************Ekonomi Bilet:********************************");
+         System.out.println("Bilet ID: " + ekonomiBilet.getBiletId());
+         System.out.println("Bilet No: " + ekonomiBilet.getBiletNo());
+         System.out.println("Bilet Fiyat: " + ekonomiBilet.getBiletFiyat());
+         System.out.println("Bilet Tarih: " + ekonomiBilet.getBiletTarih());
+         System.out.println("Bilet Koltuk No: " + ekonomiBilet.getBiletKoltukNo());
+         System.out.println("**************************Ekonomi Bilet:********************************");
+         System.out.println("");
     }
 
     @Override

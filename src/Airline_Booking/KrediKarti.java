@@ -19,7 +19,7 @@ public class KrediKarti extends OdemeYontemi {
         this.KrediKarti_no = krediKarti_no;
     }
 
-    public String getKrediKarti_tipi() {
+    public String KrediKarti_tipi() {
         return KrediKarti_tipi;
     }
 
@@ -37,5 +37,14 @@ public class KrediKarti extends OdemeYontemi {
 
     public void KrediKarti_al() {
         // implementation for getting credit card details
+    	
+    	  KrediKarti krediKarti = new KrediKarti(KrediKarti_no, KrediKarti_tipi, KrediKarti_tutar);
+          
+    	System.out.println("**************************Kredi Kartı Bilgileri:****************************************");
+        System.out.println("Kredi Kartı No: " + getKrediKarti_no());
+        System.out.println("Kredi Kartı Tipi: " + KrediKarti_tipi());
+        System.out.println("Kredi Kartı Tutar: " + getKrediKarti_tutar());
+        System.out.println("**************************Kredi Kartı Bilgileri:****************************************");
+        System.out.println("");
     }
 }

@@ -7,8 +7,9 @@ import Airline_Booking.Sefer;
 public class Ucuskontrol {
 	private Havalimani havalimani = Havalimani.getInstance();
 	
-
-    
+	 
+	
+	
   
 public void kontrolUcus(Ucak ucak, Sefer sefer) {
    // Implementation of mediator design pattern for controlling flights
@@ -24,7 +25,7 @@ public void kontrolUcus(Ucak ucak, Sefer sefer) {
     newYorkAirport.setHavalimaniKodu("JFK");
     
   
-    
+    /*Havalimanı Bilgisi basılacak unutuldu*/
   
     
 }

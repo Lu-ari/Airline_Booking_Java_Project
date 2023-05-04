@@ -10,34 +10,35 @@ public class Odeme {
         this.factory = factory;
     }
     
-    public void Odeme_hesapla(String yontem) {
+    public void Odeme_kredikartihesapla(String yontem) {
         OdemeYontemi odemeYontemi = factory.createOdemeYontemi(yontem);
-        // Perform calculations with OdemeYontemi object
-        Ekonomi ekonomiBilet = new Ekonomi("10kg");
-        ekonomiBilet.setBiletId(1);
-        ekonomiBilet.setBiletNo(1234);
-        ekonomiBilet.setBiletFiyat(500);
-        ekonomiBilet.setBiletTarih("2023-05-10");
-        ekonomiBilet.setBiletKoltukNo(15);
-        
-        System.out.println("**************************Ekonomi Bilet:********************************");
-        System.out.println("Bilet ID: " + ekonomiBilet.getBiletId());
-        System.out.println("Bilet No: " + ekonomiBilet.getBiletNo());
-        System.out.println("Bilet Fiyat: " + ekonomiBilet.getBiletFiyat());
-        System.out.println("Bilet Tarih: " + ekonomiBilet.getBiletTarih());
-        System.out.println("Bilet Koltuk No: " + ekonomiBilet.getBiletKoltukNo());
-        System.out.println("**************************Ekonomi Bilet:********************************");
-        System.out.println("");
+        // Odeme objesi ile bilet hesaplanıyor
+       
+        Ekonomi ekonomi =new Ekonomi("10kg");
+        ekonomi.Bilet_olustur();
+       
         
         KrediKarti krediKarti = new KrediKarti(123456789, "Visa", 500);
         krediKarti.KrediKarti_al();
         
-        System.out.println("**************************Kredi Kartı Bilgileri:****************************************");
-        System.out.println("Kredi Kartı No: " + krediKarti.getKrediKarti_no());
-        System.out.println("Kredi Kartı Tipi: " + krediKarti.getKrediKarti_tipi());
-        System.out.println("Kredi Kartı Tutar: " + krediKarti.getKrediKarti_tutar());
-        System.out.println("**************************Kredi Kartı Bilgileri:****************************************");
-        System.out.println("");
+      
+        
+        
+       
+    }
+    
+    public void Odeme_nakithesapla(String yontem) {
+        OdemeYontemi odemeYontemi = factory.createOdemeYontemi(yontem);
+        // Odeme objesi ile bilet hesaplanıyor
+       
+        Business business =new Business("30 kg");
+        business.Bilet_olustur();
+        
+      
+        Nakit Nakit = new Nakit(600, "TL");
+        Nakit.Nakit_al();
+        
+       
     }
     public int getOdeme_id() {
         return Odeme_id;

@@ -21,14 +21,23 @@ public class Business implements Bilet {
     public void Bilet_olustur() {
         // Implementation of Bilet_olustur for Business class
     	
-    	Bilet newBilet = new Business(Business_vip);
+    	Business newBilet = new Business("Business");
 
         // Then, set the properties of the new Bilet object
-        newBilet.setBiletId(biletId);
-        newBilet.setBiletNo(biletNo);
-        newBilet.setBiletFiyat(biletFiyat);
-        newBilet.setBiletTarih(biletTarih);
-        newBilet.setBiletKoltukNo(biletKoltukNo);
+        newBilet.setBiletId(2);
+        newBilet.setBiletNo(1);
+        newBilet.setBiletFiyat(5000);
+        newBilet.setBiletTarih("2023-05-01");
+        newBilet.setBiletKoltukNo(14);
+        
+        System.out.println("**************************Business Bilet:********************************");
+        System.out.println("Bilet ID: " + newBilet.getBiletId());
+        System.out.println("Bilet No: " + newBilet.getBiletNo());
+        System.out.println("Bilet Fiyat: " +newBilet. getBiletFiyat());
+        System.out.println("Bilet Tarih: " + newBilet.getBiletTarih());
+        System.out.println("Bilet Koltuk No: " + newBilet.getBiletKoltukNo());
+        System.out.println("**************************Business Bilet:********************************");
+        System.out.println("");
     }
     
 
