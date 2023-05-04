@@ -2,7 +2,7 @@ package Airline_Booking;
 
 import java.util.ArrayList;
 
-
+import java.util.Scanner;
 public class Musteri {
     private int musteri_id;
     private String musteri_adi;
@@ -94,23 +94,67 @@ public class Musteri {
     // Add a new customer to the ArrayList
     public static void Musteri_ekle(Musteri customer) {
         customers.add(customer);
-        System.out.println("Customer added: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
+        System.out.println("");
+        System.out.println("****************Müsteri Bilgileri************");
+        System.out.println("Musteri Adi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
+        System.out.println("Musteri Kullanici Adı: " + customer.musteri_kulladi + " (Mail Adresi: " + customer.musteri_mail + ")");
+        System.out.println("****************Müsteri Bilgileri************");
+        System.out.println("");
     }
 
     public void Musteri_sil() {
-        // delete customer 
-    	}
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter customer ID: ");
+        int customerId = scanner.nextInt();
+        for (Musteri customer : customers) {
+            if (customer.musteri_id == customerId) {
+                customers.remove(customer);
+                System.out.println("Customer deleted: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
+                return;
+            }
+        }
+        System.out.println("Customer with ID " + customerId + " not found.");
+    }
 
-    public void Musteri_bul() {
-        // find customer 
+    public void Musteri_bul(int musteri_id) {
+        for (Musteri customer : customers) {
+            if (customer.musteri_id == musteri_id) {
+                System.out.println("Customer found: " + customer.musteri_adi);
+                return;
+            }
+        }
+        System.out.println("Customer not found with ID: " + musteri_id);
     }
 
     public void Musteri_duzenle() {
-        // update customer
+    	Scanner input = new Scanner(System.in);
+        System.out.print("Enter customer ID: ");
+        int customerId = input.nextInt();
+        
+        // Find the customer with the given ID
+        Musteri customer = null;
+        for (Musteri c : customers) {
+            if (c.musteri_id == customerId) {
+                customer = c;
+                break;
+            }
+        }
+        
+        if (customer == null) {
+            System.out.println("Customer not found.");
+            return;
+        }
+        
+        System.out.print("Enter new customer name: ");
+        String newName = input.next();
+        customer.musteri_adi = newName;
+        System.out.println("Customer updated: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
     }
     
     public static void main(String[] args) {
-        // Create a new customer
+        // Müşteri oluştur.
+    	
+    	
         Musteri customer = new Musteri.Builder()
                 .musteri_id(1)
                 .musteri_adi("John Doe")
@@ -124,41 +168,37 @@ public class Musteri {
                 .build();
         customer.Musteri_ekle(customer);
         
-        
 
-        // Create a new ticket
-        Bilet ticket = new Business("VIP");
-        ticket.setBiletId(1);
-        ticket.setBiletNo(12345);
-        ticket.setBiletFiyat(1000);
-        ticket.setBiletTarih("2022-01-01");
-        ticket.setBiletKoltukNo(1);
-
-       
-        
+        // Sefer oluşturuldu
     	Sefer sefer = new Sefer();
         Ucak ucak = new Ucak();
         
      
-     // Sefer oluşturuldu
+   
         sefer.olusturSefer(ucak);
         
-        if (ucak == null) {System.out.println("No airplane information available.");
+        if (ucak == null) {System.out.println("Uçak Bulunamadı....");
         }
         else {
-        // Create Ucuskontrol object and call kontrolUcus method, passing in Sefer and Ucak objects
+        	
+        // Uçuş Kontrol Mediator Class ile kontrol sağlanıyor
         Ucuskontrol ucuskontrol = new Ucuskontrol();
         ucuskontrol.kontrolUcus(ucak, sefer);
 
         // Print flight information
         
-        Rezervasyon rezervasyon = new Rezervasyon(1, 123, "2023-05-04", 12);
-        rezervasyon.Rezervasyon_olustur();
-        
-        //Odeme ve Ödeme yötemi
+        //Odeme ve Ödeme yötemi ve bilet'in alınmıştır
         Factory factory = new Factory();
         Odeme odeme = new Odeme(factory);
         odeme.Odeme_hesapla("kredi_karti");
+        
+        //Odeme yapıldı ise rezervasyonu gösterme
+        if (odeme.equals(factory)==true) {
+       
+        Rezervasyon rezervasyon = new Rezervasyon(1, 123, "2023-05-04", 12);
+        rezervasyon.Rezervasyon_olustur();
+        
+        }
         
         
         }

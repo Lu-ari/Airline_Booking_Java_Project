@@ -14,7 +14,7 @@ public Sefer() {
 }
 
 public void olusturSefer( Ucak ucak) {
-	 // Clone the prototype to create a new airplane object
+	
    
 	Sefer sefer = new Sefer();
     sefer.setSeferId(456);
@@ -22,7 +22,7 @@ public void olusturSefer( Ucak ucak) {
     sefer.setSeferAdi("Istanbul - Paris");
     sefer.setSeferDestinasyon("Paris");
     sefer.setSeferUcuskodu("TK123");
- // Constructor implementation
+ // Yapılandırıcı implemantasyonu
 	
  	Ucak ucak1 = new Ucak();
  	ucak1.setUcak_id(1);
@@ -32,23 +32,36 @@ public void olusturSefer( Ucak ucak) {
  	ucak1.setUcak_govdetipi("Dar gövde");
  	ucak1.setUcak_koltuksayisi(200);
 
- 	// Clone the ucak1 object
+ 	// ucak1 objesini klonla
  	Ucak ucak2 = ucak1.clone();
-    
-    System.out.println("Flight Information:");
+ 	ucak2.setUcak_id(2);
+ 	ucak2.setUcak_koltuksayisi(183);
+ 	
+ 	System.out.println("*****************************Klonlanan Uçak Bilgisi************************");
+ 	System.out.println("Uçak ID'si: " + ucak2.getUcak_id());
+ 	System.out.println("Uçuş Numarası: " + ucak2.getUcak_kuyrukkod());
+ 	System.out.println("Uçak Adı: " + ucak2.getUcak_marka());
+ 	System.out.println("Hedef: " + ucak2.getUcak_model());
+ 	System.out.println("Uçak Kodu: " + ucak2.getUcak_koltuksayisi());
+     System.out.println("*****************************Klonlanan Uçak Bilgisi************************");
+     System.out.println("");
+     
+ 	if (ucak2 != null) {//Klonlanmış uçakla seyahet bilgisi basılmıştır.
+    	 
+    System.out.println("*****************************Flight Information:************************");
     System.out.println("ID: " + sefer.getSeferAdi());
-    System.out.println("Flight Number: " + sefer.getSeferNo());
-    System.out.println("Flight Name: " + sefer.getSeferAdi());
-    System.out.println("Destination: " + sefer.getSeferDestinasyon());
-    System.out.println("Airplane Code: " + sefer.getSeferUcuskodu());
-    
+    System.out.println("Uçuş Numarası: " + sefer.getSeferNo());
+    System.out.println("Uçuş Adı: " + sefer.getSeferAdi());
+    System.out.println("Hedef: " + sefer.getSeferDestinasyon());
+    System.out.println("Uçak Kodu: " + sefer.getSeferUcuskodu());
+    System.out.println("*****************************Flight Information:************************");
+    System.out.println("");
    
   
-    if (ucak2 != null) {
-        System.out.println("Airplane Model: " + ucak2.getUcak_model());
-        System.out.println("Airplane Seat Count: " + ucak2.getUcak_koltuksayisi());
+    
+        
     } else {
-        System.out.println("No airplane information available.");
+        System.out.println("Uçak bilgisi bulunanamaştır");//Observer class gereği Eğer uçak yoksa bilet basılamamaktadır. 
     }
 }
 

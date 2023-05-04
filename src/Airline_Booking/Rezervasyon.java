@@ -21,12 +21,7 @@ public class Rezervasyon {
         // create new reservation 
     	
     	 
-    	Sefer sefer = new Sefer();
-        Ucak ucak = new Ucak();
-    	sefer.olusturSefer(ucak);
-         
-         if (ucak == null) {System.out.println("No airplane information available.");
-         }
+    	
          
          Rezervasyon r1 = new Rezervasyon(rezervasyon_id,rezervasyon_no,rezervasyon_tarih,rezervasyon_koltukno);
          System.out.println("Rezervasyon ID: " + r1.getRezervasyon_id());
