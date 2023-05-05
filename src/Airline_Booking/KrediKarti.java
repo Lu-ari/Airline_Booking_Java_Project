@@ -1,27 +1,27 @@
 package Airline_Booking;
 
 /**
- * Kredi kartı ödeme yöntemini temsil eden sınıf.
+ * Kredi kartı odeme yontemini temsil eden sınıf.
  */
 public class KrediKarti extends OdemeYontemi {
 
     /**
-     * Kredi kartı numarasını tutan değişken.
+     * Kredi kartı numarasını tutan degisken.
      */
     private int KrediKarti_no;
 
     /**
-     * Kredi kartı tipini tutan değişken.
+     * Kredi kartı tipini tutan degisken.
      */
     private String KrediKarti_tipi;
 
     /**
-     * Kredi kartı tutarını tutan değişken.
+     * Kredi kartı tutarını tutan degisken.
      */
     private int KrediKarti_tutar;
 
     /**
-     * KrediKarti sınıfı için parametreli yapıcı metod.
+     * KrediKarti sınıfı icin parametreli yapıcı metod.
      *
      * @param no    Kredi kartı numarası.
      * @param tipi  Kredi kartı tipi.
@@ -34,7 +34,7 @@ public class KrediKarti extends OdemeYontemi {
     }
 
     /**
-     * Kredi kartı numarasını döndüren metod.
+     * Kredi kartı numarasını donduren metod.
      *
      * @return Kredi kartı numarası.
      */
@@ -52,7 +52,7 @@ public class KrediKarti extends OdemeYontemi {
     }
 
     /**
-     * Kredi kartı tipini döndüren metod.
+     * Kredi kartı tipini donduren metod.
      *
      * @return Kredi kartı tipi.
      */
@@ -70,7 +70,7 @@ public class KrediKarti extends OdemeYontemi {
     }
 
     /**
-     * Kredi kartı tutarını döndüren metod.
+     * Kredi kartı tutarını donduren metod.
      *
      * @return Kredi kartı tutarı.
      */

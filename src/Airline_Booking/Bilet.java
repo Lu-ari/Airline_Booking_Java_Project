@@ -1,6 +1,6 @@
 package Airline_Booking;
 /**
- * Bilet arayüzü, bir bilet nesnesinin sahip olması gereken özellikleri ve davranışları tanımlar.
+ * Bilet arayuzu, bir bilet nesnesinin sahip olmasi gereken ozellikleri ve davranısları tanimlar.
  */
 public interface Bilet {
     
@@ -19,30 +19,30 @@ public interface Bilet {
     void setBiletId(int biletId);
     
     /**
-     * Bilet numarasını getirir.
+     * Bilet numarasini getirir.
      *
-     * @return Bilet numarası
+     * @return Bilet numarasi
      */
     int getBiletNo();
     
     /**
-     * Bilet numarasını ayarlar.
+     * Bilet numarasini ayarlar.
      *
-     * @param biletNo Yeni bilet numarası
+     * @param biletNo Yeni bilet numarasi
      */
     void setBiletNo(int biletNo);
     
     /**
      * Bilet fiyatını getirir.
      *
-     * @return Bilet fiyatı
+     * @return Bilet fiyati
      */
     int getBiletFiyat();
     
     /**
-     * Bilet fiyatını ayarlar.
+     * Bilet fiyatini ayarlar.
      *
-     * @param biletFiyat Yeni bilet fiyatı
+     * @param biletFiyat Yeni bilet fiyati
      */
     void setBiletFiyat(int biletFiyat);
     
@@ -61,26 +61,26 @@ public interface Bilet {
     void setBiletTarih(String biletTarih);
     
     /**
-     * Bilet koltuk numarasını getirir.
+     * Bilet koltuk numarasini getirir.
      *
-     * @return Bilet koltuk numarası
+     * @return Bilet koltuk numarasi
      */
     int getBiletKoltukNo();
     
     /**
-     * Bilet koltuk numarasını ayarlar.
+     * Bilet koltuk numarasini ayarlar.
      *
-     * @param biletKoltukNo Yeni bilet koltuk numarası
+     * @param biletKoltukNo Yeni bilet koltuk numarasi
      */
     void setBiletKoltukNo(int biletKoltukNo);
     
     /**
-     * Bileti günceller.
+     * Bileti gunceller.
      */
     void Bilet_guncelle();
     
     /**
-     * Yeni bir bilet oluşturur.
+     * Yeni bir bilet olusturur.
      */
     void Bilet_olustur();
     

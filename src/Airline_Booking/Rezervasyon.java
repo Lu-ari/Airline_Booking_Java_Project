@@ -2,12 +2,12 @@ package Airline_Booking;
 
 /**
 
-Rezervasyon sınıfı, bir rezervasyonun özelliklerini tanımlar ve yönetir.
+Rezervasyon sınıfı, bir rezervasyonun ozelliklerini tanımlar ve yonetir.
 */
 
 public class Rezervasyon {
 	/**
-	 * Rezervasyonun benzersiz kimliği.
+	 * Rezervasyonun benzersiz kimligi.
 	 * */
 	private int rezervasyon_id;
 	/**
@@ -17,19 +17,19 @@ public class Rezervasyon {
 	private int rezervasyon_no;
 	/**
 
-	Rezervasyonun yapıldığı tarih.
+	Rezervasyonun yapıldıgı tarih.
 	*/
 	private String rezervasyon_tarih;
 	/**
 
-	Rezervasyonun yapıldığı koltuk numarası.
+	Rezervasyonun yapıldıgı koltuk numarası.
 	*/
 	private int rezervasyon_koltukno;
-	/**Rezervasyon nesnesinin özelliklerini belirten yapıcı metot.
-	@param rezervasyon_id Rezervasyonun benzersiz kimliği.
+	/**Rezervasyon nesnesinin ozelliklerini belirten yapıcı metot.
+	@param rezervasyon_id Rezervasyonun benzersiz kimligi.
 	@param rezervasyon_no Rezervasyon numarası.
-	@param rezervasyon_tarih Rezervasyonun yapıldığı tarih.
-	@param rezervasyon_koltukno Rezervasyonun yapıldığı koltuk numarası.
+	@param rezervasyon_tarih Rezervasyonun yapıldıgı tarih.
+	@param rezervasyon_koltukno Rezervasyonun yapıldıgı koltuk numarası.
 	*/
     public Rezervasyon(int rezervasyon_id, int rezervasyon_no, String rezervasyon_tarih, int rezervasyon_koltukno) {
         this.rezervasyon_id = rezervasyon_id;
@@ -40,14 +40,14 @@ public class Rezervasyon {
     
     /**
 
-	Rezervasyonu günceller.
+	Rezervasyonu gunceller.
 	*/
     public void Rezervasyon_guncelle() {
     	
     }
     /**
 
-    Yeni bir rezervasyon oluşturur ve bilgilerini ekrana yazdırır.
+    Yeni bir rezervasyon olusturur ve bilgilerini ekrana yazdırır.
     */
     public void Rezervasyon_olustur() {
          Rezervasyon r1 = new Rezervasyon(rezervasyon_id,rezervasyon_no,rezervasyon_tarih,rezervasyon_koltukno);
@@ -59,7 +59,7 @@ public class Rezervasyon {
     
     /**
 
-    Verilen rezervasyon kimliğine göre, rezervasyonu veritabanından bulur.
+    Verilen rezervasyon kimligine gore, rezervasyonu veritabanından bulur.
     */
 
     public void Rezervasyon_bul() {
@@ -67,7 +67,7 @@ public class Rezervasyon {
     }
     /**
 
-    Verilen rezervasyon kimliğine göre, rezervasyonu veritabanından siler.
+    Verilen rezervasyon kimligine gore, rezervasyonu veritabanından siler.
     */
     public void Rezervasyon_sil() {
     	// veritabanından rezervasyonu sil

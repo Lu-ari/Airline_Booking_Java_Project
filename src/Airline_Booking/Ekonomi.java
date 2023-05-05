@@ -1,13 +1,13 @@
 package Airline_Booking;
 
 /**
- * Ekonomi sınıfı, Bilet arayüzünü uygulayan bir sınıftır.
- * Ekonomi sınıfı, bilet oluşturma, güncelleme ve silme işlemleri yapabilir.
+ * Ekonomi sınıfı, Bilet arayuzunu uygulayan bir sınıftır.
+ * Ekonomi sınıfı, bilet olusturma, guncelleme ve silme islemleri yapabilir.
  */
 public class Ekonomi implements Bilet {
 
     /**
-     * Ekonomi sınıfı için özellikler
+     * Ekonomi sınıfı icin ozellikler
      */
 	/**
 	 * Ekonomik ekstra bagaj tutarını tutar.
@@ -30,7 +30,7 @@ public class Ekonomi implements Bilet {
 	private int biletFiyat;
 
 	/**
-	 * Biletin satın alındığı tarihi tutar.
+	 * Biletin satın alındıgı tarihi tutar.
 	 */
 	private String biletTarih;
 
@@ -39,9 +39,9 @@ public class Ekonomi implements Bilet {
 	 */
 	private int biletKoltukNo;
 	/**
-	 * Ekonomi sınıfının yapıcı metodu, Ekonomi seyahat sınıfı biletlerinin ekstra bagaj özelliğini ayarlar.
+	 * Ekonomi sınıfının yapıcı metodu, Ekonomi seyahat sınıfı biletlerinin ekstra bagaj ozelligini ayarlar.
 	 *
-	 * @param ekstrabagaj Ekonomi seyahat sınıfının ekstra bagaj özelliği
+	 * @param ekstrabagaj Ekonomi seyahat sınıfının ekstra bagaj ozelligi
 	 */
 
    
@@ -50,17 +50,17 @@ public class Ekonomi implements Bilet {
     }
     
     /**
-     * Bilet_guncelle metodu, Bilet arayüzünden uygulanır
-     * Ekonomi sınıfı için özel bir uygulama yapar.
+     * Bilet_guncelle metodu, Bilet arayuzunden uygulanır
+     * Ekonomi sınıfı icin ozel bir uygulama yapar.
      */
     @Override
     public void Bilet_guncelle() {
-        // Ekonomi sınıfına özel Bilet_guncelle uygulaması
+        // Ekonomi sınıfına ozel Bilet_guncelle uygulaması
     }
 
     /**
-     * Bilet_olustur metodu, Bilet arayüzünden uygulanır
-     * Ekonomi sınıfı için özel bir uygulama yapar.
+     * Bilet_olustur metodu, Bilet arayuzunden uygulanır
+     * Ekonomi sınıfı icin ozel bir uygulama yapar.
      */
     @Override
     public void Bilet_olustur() {
@@ -83,12 +83,12 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Bilet_sil metodu, Bilet arayüzünden uygulanır
-     * Ekonomi sınıfı için özel bir uygulama yapar.
+     * Bilet_sil metodu, Bilet arayuzunden uygulanır
+     * Ekonomi sınıfı icin ozel bir uygulama yapar.
      */
     @Override
     public void Bilet_sil() {
-        // Ekonomi sınıfına özel Bilet_sil uygulaması
+        // Ekonomi sınıfına ozel Bilet_sil uygulaması
     }
 
     /**

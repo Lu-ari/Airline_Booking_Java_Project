@@ -3,29 +3,29 @@ package Airline_Booking;
 
 /**
 
-Bu sınıf, ödeme yöntemlerinin temel özelliklerini içerir.
-Ödeme yöntemi adını saklar.
+Bu sınıf, odeme yontemlerinin temel ozelliklerini icerir.
+odeme yontemi adını saklar.
 */
 
 public abstract class  OdemeYontemi {
 	
 	/**
-	 * Ödeme yontemi bilgisini saklayan korumalı değişken.
+	 * odeme yontemi bilgisini saklayan korumalı degisken.
 	 */
 	protected String OdemeYontemi;
 	
 /**
- * ödeme yöntemi alınır
+ * odeme yontemi alınır
  * */
     public void OdemeYontemi_al() {
     	
     }
     /**
-     * Ödeme yöntemini göndermek için kullanılır.
+     * odeme yontemini gondermek icin kullanılır.
     */
 
     public void OdemeYontemi_gonder() {
-    	// ödeme yöntemi gönderilir
+    	// odeme yontemi gonderilir
     }
 }
 

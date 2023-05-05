@@ -3,7 +3,7 @@ package Airline_Booking;
 import java.util.ArrayList;
 
 /*
- * @author Mehmet Akif Özdemir
+ * @author Mehmet Akif ozdemir
  * 
  * */
 import java.util.Scanner;
@@ -14,61 +14,61 @@ public class Musteri {
 	
 	
 	   /**
-     * Müşterinin ID'si.
+     * Musterinin ID'si.
      */
     private int musteri_id;
 
     /**
-     * Müşterinin adı.
+     * Musterinin adı.
      */
     private String musteri_adi;
 
     /**
-     * Müşterinin kullanıcı adı.
+     * Musterinin kullanıcı adı.
      */
     private String musteri_kulladi;
 
     /**
-     * Müşterinin şifresi.
+     * Musterinin sifresi.
      */
     private String musteri_sifre;
 
     /**
-     * Müşterinin e-posta adresi.
+     * Musterinin e-posta adresi.
      */
     private String musteri_mail;
 
     /**
-     * Müşterinin adresi.
+     * Musterinin adresi.
      */
     private String musteri_adres;
 
     /**
-     * Müşterinin telefon numarası.
+     * Musterinin telefon numarası.
      */
     private int musteri_tel;
 
     /**
-     * Müşterinin yemek tercihi.
+     * Musterinin yemek tercihi.
      */
     private String musteri_yemektercihi;
 
     /**
-     * Müşterinin VIP kodu.
+     * Musterinin VIP kodu.
      */
     private int musteri_vipkod;
 
     /**
 
-    Musteri sınıfı, müşteri bilgilerini tutmak için kullanılır.
+    Musteri sınıfı, musteri bilgilerini tutmak icin kullanılır.
     */
     public static ArrayList<Musteri> customers = new ArrayList<>();
     
     /**
      * Builder tasarım deseninde kullanılan constructor.
-     * Musteri nesnesi oluşturur ve builder nesnesinden gelen verileri kullanarak değişkenlerini ayarlar.
+     * Musteri nesnesi olusturur ve builder nesnesinden gelen verileri kullanarak degiskenlerini ayarlar.
      *
-     * @param builder Müşteri nesnesi oluşturmak için kullanılan builder nesnesi.
+     * @param builder Musteri nesnesi olusturmak icin kullanılan builder nesnesi.
      */
    
     private Musteri(Builder builder) {
@@ -84,57 +84,57 @@ public class Musteri {
     }
     
     /**
-     * Builder tasarım deseni kullanılarak Müşteri nesnesi oluşturmak için kullanılan Builder sınıfı.
+     * Builder tasarım deseni kullanılarak Musteri nesnesi olusturmak icin kullanılan Builder sınıfı.
      */
     public static class Builder {
         /**
-         * Müşteri ID'si
+         * Musteri ID'si
          */
         private int musteri_id;
 
         /**
-         * Müşteri adı
+         * Musteri adı
          */
         private String musteri_adi;
 
         /**
-         * Müşteri kullanıcı adı
+         * Musteri kullanıcı adı
          */
         private String musteri_kulladi;
 
         /**
-         * Müşteri şifresi
+         * Musteri sifresi
          */
         private String musteri_sifre;
 
         /**
-         * Müşteri e-posta adresi
+         * Musteri e-posta adresi
          */
         private String musteri_mail;
 
         /**
-         * Müşteri adresi
+         * Musteri adresi
          */
         private String musteri_adres;
 
         /**
-         * Müşteri telefon numarası
+         * Musteri telefon numarası
          */
         private int musteri_tel;
 
         /**
-         * Müşteri yemek tercihi
+         * Musteri yemek tercihi
          */
         private String musteri_yemektercihi;
 
         /**
-         * Müşteri VIP kodu
+         * Musteri VIP kodu
          */
         private int musteri_vipkod;
 
         /**
-         * Musteri ID değerini ayarlar.
-         * @param musteri_id Musteri ID değeri.
+         * Musteri ID degerini ayarlar.
+         * @param musteri_id Musteri ID degeri.
          * @return Builder nesnesi.
          */
         public Builder musteri_id(int musteri_id) {
@@ -160,8 +160,8 @@ public class Musteri {
             return this;
         }
         /**
-         * Musteri şifresini ayarlar.
-         * @param musteri_sifre Musteri şifresi.
+         * Musteri sifresini ayarlar.
+         * @param musteri_sifre Musteri sifresi.
          * @return Builder nesnesi.
          */
 
@@ -217,8 +217,8 @@ public class Musteri {
             return this;
         }
         /**
-         * Builder nesnesinin özelliklerine dayanarak yeni bir Musteri nesnesi oluşturur.
-         * @return Yeni oluşturulan Musteri nesnesi.
+         * Builder nesnesinin ozelliklerine dayanarak yeni bir Musteri nesnesi olusturur.
+         * @return Yeni olusturulan Musteri nesnesi.
          */
         public Musteri build() {
             return new Musteri(this);
@@ -233,10 +233,10 @@ public class Musteri {
    
     	customers.add(customer);
         System.out.println("");
-        System.out.println("****************Müsteri Bilgileri************");
+        System.out.println("****************Musteri Bilgileri************");
         System.out.println("Musteri Adi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
         System.out.println("Musteri Kullanici Adı: " + customer.musteri_kulladi + " (Mail Adresi: " + customer.musteri_mail + ")");
-        System.out.println("****************Müsteri Bilgileri************");
+        System.out.println("****************Musteri Bilgileri************");
         System.out.println("");
         
     }
@@ -246,16 +246,16 @@ public class Musteri {
     */
     public void Musteri_sil() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Müşteri ID'si giriniz: ");
+        System.out.print("Musteri ID'si giriniz: ");
         int customerId = scanner.nextInt();
         for (Musteri customer : customers) {
             if (customer.musteri_id == customerId) {
                 customers.remove(customer);
-                System.out.println("Müşteri Silindi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
+                System.out.println("Musteri Silindi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
                 return;
             }
         }
-        System.out.println("Müşteri ID'si " + customerId + " not found.");
+        System.out.println("Musteri ID'si " + customerId + " not found.");
     }
     /**
 
@@ -266,11 +266,11 @@ public class Musteri {
     public void Musteri_bul(int musteri_id) {
         for (Musteri customer : customers) {
             if (customer.musteri_id == musteri_id) {
-                System.out.println("Müşteri bulundu: " + customer.musteri_adi);
+                System.out.println("Musteri bulundu: " + customer.musteri_adi);
                 return;
             }
         }
-        System.out.println("Müşteri ID ile bulunamadı: " + musteri_id);
+        System.out.println("Musteri ID ile bulunamadı: " + musteri_id);
     }
     /**
 
@@ -278,7 +278,7 @@ public class Musteri {
     */
     public void Musteri_duzenle() {
     	Scanner input = new Scanner(System.in);
-        System.out.print("Müşteri ID'si giriniz: ");
+        System.out.print("Musteri ID'si giriniz: ");
         int customerId = input.nextInt();
         
         // Find the customer with the given ID
@@ -291,23 +291,23 @@ public class Musteri {
         }
         
         if (customer == null) {
-            System.out.println("Müşteri bulunamadı.");
+            System.out.println("Musteri bulunamadı.");
             return;
         }
         
-        System.out.print("Yeni müşterinin adını girim: ");
+        System.out.print("Yeni musterinin adını girim: ");
         String newName = input.next();
         customer.musteri_adi = newName;
         System.out.println("");
         System.out.println("*****************************************************");
-        System.out.println("Müşteri Güncellendi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
+        System.out.println("Musteri Guncellendi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
     }
     
     /**
-     * Bu sınıf, Airline Booking System'da müşteri bilgilerini yönetmek için kullanılır.
-     * Main metodu, uygulamayı başlatır ve kullanıcıya gerekli seçenekleri sunar.
+     * Bu sınıf, Airline Booking System'da musteri bilgilerini yonetmek icin kullanılır.
+     * Main metodu, uygulamayı baslatır ve kullanıcıya gerekli secenekleri sunar.
      * 
-     * @param args Komut satırından geçilen argümanlar.
+     * @param args Komut satırından gecilen argumanlar.
      */
    
     public static void main(String[] args) {
@@ -327,19 +327,19 @@ public class Musteri {
         
         
 
-        // Sefer oluşturuldu
+        // Sefer olusturuldu
     	Sefer sefer = new Sefer(1, 8844, "Istanbul-Paris", "Paris", "2755");
     	sefer.seferYazdir(sefer);
     	
-        Ucak ucak = new Ucak(1, "TK1233", "Boeing", "737-800", "Dar Gövde", 156);
-        Ucak ucak2 = ucak.clone();  //*****2.Uçak klonlandı 
+        Ucak ucak = new Ucak(1, "TK1233", "Boeing", "737-800", "Dar Govde", 156);
+        Ucak ucak2 = ucak.clone();  //*****2.Ucak klonlandı 
     
      ucak.ucakYazdir(ucak);
    
      
        
         
-        if (ucak == null) {System.out.println("Uçak Bulunamadı....");
+        if (ucak == null) {System.out.println("Ucak Bulunamadı....");
         }
         else {
         	
@@ -347,30 +347,30 @@ public class Musteri {
         	Havalimani istanbulAirport = Havalimani.getInstance();
         	   istanbulAirport.setHavalimaniKodu("IST");
         	   System.out.println("********************************************************");
-        	   System.out.println("Havalimanı kodu  Istanbul Havalimanı için: " + istanbulAirport.getirHavalimaniKodu());
+        	   System.out.println("Havalimanı kodu  Istanbul Havalimanı icin: " + istanbulAirport.getirHavalimaniKodu());
         	   System.out.println("********************************************************");
         	
-        // Uçuş Kontrol Mediator Class ile kontrol sağlanıyor
+        // Ucus Kontrol Mediator Class ile kontrol saglanıyor
         Ucuskontrol ucuskontrol = new Ucuskontrol();
         ucuskontrol.kontrolUcus(ucak, sefer);}
 
         // Print flight information
         
-        //Odeme ve Ödeme yötemi ve bilet'in alınmıştır
+        //Odeme ve odeme yotemi ve bilet'in alınmıstır
         Factory factory = new Factory();
         Odeme odeme = new Odeme(factory);
         odeme.Odeme_kredikartihesapla("kredi_karti");
         
         
         
-        //Odeme yapıldı ise rezervasyonu gösterme
+        //Odeme yapıldı ise rezervasyonu gosterme
         if (odeme.equals(factory)==true) {
        
         Rezervasyon rezervasyon = new Rezervasyon(1, 123, "2023-05-04", 12);
         rezervasyon.Rezervasyon_olustur();
         }
         
-        //2.Müşteriyi oluştur.
+        //2.Musteriyi olustur.
         Musteri customer1 = new Musteri.Builder()
                 .musteri_id(2)
                 .musteri_adi("Smith Lue")
@@ -384,12 +384,12 @@ public class Musteri {
                 .build();
         customer1.Musteri_ekle(customer1);
         
-      // 2.Sefer oluşturuldu
+      // 2.Sefer olusturuldu
     	Sefer sefer2 = new Sefer(2, 2233, "Istanbul-Berlin", "Berlin", "8857");
     	sefer2.seferYazdir(sefer2);
        
         
-        //*****2.Uçak klonlandı ve id ile koltuk sayısı değerleri güncellendi***
+        //*****2.Ucak klonlandı ve id ile koltuk sayısı degerleri guncellendi***
         
         
        
@@ -397,7 +397,7 @@ public class Musteri {
         ucak2.setUcak_koltuksayisi(200);
         ucak2.ucakYazdir(ucak2);
         
-        if (ucak2 == null) {System.out.println("Uçak Bulunamadı....");
+        if (ucak2 == null) {System.out.println("Ucak Bulunamadı....");
         }
         else {
         	
@@ -405,22 +405,22 @@ public class Musteri {
         	Havalimani istanbulAirport = Havalimani.getInstance();
      	   istanbulAirport.setHavalimaniKodu("JFK");
      	   System.out.println("********************************************************");
-     	   System.out.println("Havalimanı kodu  John F KENEDY Havalimanı için: " + istanbulAirport.getirHavalimaniKodu());
+     	   System.out.println("Havalimanı kodu  John F KENEDY Havalimanı icin: " + istanbulAirport.getirHavalimaniKodu());
      	   System.out.println("********************************************************");
      	
-        // Uçuş Kontrol Mediator Class ile kontrol sağlanıyor
+        // Ucus Kontrol Mediator Class ile kontrol saglanıyor
         Ucuskontrol ucuskontrol2 = new Ucuskontrol();
         ucuskontrol2.kontrolUcus(ucak2, sefer2);}
 
    
         
-        //Odeme ve Ödeme yötemi ve biletalınmıştır
+        //Odeme ve odeme yotemi ve biletalınmıstır
         Factory factory1 = new Factory();
         Odeme odeme1 = new Odeme(factory1);
         odeme1.Odeme_nakithesapla("Nakit");
         
         
-      //Odeme yapıldı ise rezervasyonu gösterme
+      //Odeme yapıldı ise rezervasyonu gosterme
         if (odeme.equals(factory)==true) {
        
         Rezervasyon rezervasyon = new Rezervasyon(3, 123, "2023-05-03", 1);

@@ -2,13 +2,13 @@ package Airline_Booking;
 
 /**
 
-Prototype arayüzü, klonlama yöntemini bildiren bir arayüzdür.
+Prototype arayuzu, klonlama yontemini bildiren bir arayuzdur.
 */
 interface Prototype {
 	
 	/**
 
-	Bu metot, nesnenin kopyasını oluşturmak için kullanılır.
+	Bu metot, nesnenin kopyasını olusturmak icin kullanılır.
 	@return kopya nesne
 	*/
  Prototype clone();

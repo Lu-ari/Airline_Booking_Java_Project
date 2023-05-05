@@ -1,12 +1,12 @@
 package Airline_Booking;
 
 /**
- * Business sınıfı, Bilet arayüzünü uygular ve Business seyahat sınıfı biletlerinin özelliklerini tutar.
+ * Business sınıfı, Bilet arayüzünü uygular ve Business seyahat sınıfı biletlerinin ozelliklerini tutar.
  */
 public class Business implements Bilet {
 	
 	   /**
-     * Business seyahat sınıfının VIP özelliğini tutar.
+     * Business seyahat sınıfının VIP ozelligini tutar.
      */
     private String Business_vip;
 
@@ -37,9 +37,9 @@ public class Business implements Bilet {
 	
 	
     /**
-     * Business sınıfının yapıcı metodu, Business seyahat sınıfı biletlerinin VIP özelliğini ayarlar.
+     * Business sınıfının yapıcı metodu, Business seyahat sınıfı biletlerinin VIP ozelligini ayarlar.
      *
-     * @param vip Business seyahat sınıfının VIP özelliği
+     * @param vip Business seyahat sınıfının VIP ozelligi
      */
 	
     public Business(String vip) {
@@ -48,24 +48,24 @@ public class Business implements Bilet {
 
     /**
      * Bilet_guncelle metodu, Bilet arayüzünden uygulanır.
-     * Bu sınıfta henüz bir güncelleme işlemi yapılmamaktadır.
+     * Bu sınıfta henüz bir güncelleme islemi yapılmamaktadır.
      * 
      *
      */
     @Override
     public void Bilet_guncelle() {
-        // Business sınıfı için Bilet_guncelle metodunun uygulaması
-        // henüz yapılmamıştır.
+        // Business sınıfı icin Bilet_guncelle metodunun uygulaması
+        // henüz yapılmamıstır.
     }
 
     /**
      * Bilet_olustur metodu, Bilet arayüzünden uygulanır.
-     * Bu sınıfta yeni bir Business bilet oluşturulur ve özellikleri set edilir.
+     * Bu sınıfta yeni bir Business bilet olusturulur ve ozellikleri set edilir.
      */
     @Override
     public void Bilet_olustur() {
         Business newBilet = new Business("Business");
-        // Yeni bilet nesnesinin özellikleri set edilir
+        // Yeni bilet nesnesinin ozellikleri set edilir
         newBilet.setBiletId(2);
         newBilet.setBiletNo(1);
         newBilet.setBiletFiyat(5000);
@@ -83,16 +83,16 @@ public class Business implements Bilet {
 
     /**
      * Bilet_sil metodu, Bilet arayüzünden uygulanır.
-     * Bu sınıfta henüz bir silme işlemi yapılmamaktadır.
+     * Bu sınıfta henüz bir silme islemi yapılmamaktadır.
      */
     @Override
     public void Bilet_sil() {
-        // Business sınıfı için Bilet_sil metodunun uygulaması
-        // henüz yapılmamıştır.
+        // Business sınıfı icin Bilet_sil metodunun uygulaması
+        // henüz yapılmamıstır.
     }
 
     /**
-     * Bilet ID'sini döndüren get metodu.
+     * Bilet ID'sini donduren get metodu.
      * @return Bilet ID'si
      */
     @Override
@@ -189,4 +189,3 @@ public class Business implements Bilet {
         	        this.biletKoltukNo = biletKoltukNo;
         	    }
         	}
-

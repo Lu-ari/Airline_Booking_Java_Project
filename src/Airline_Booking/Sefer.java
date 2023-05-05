@@ -2,7 +2,7 @@ package Airline_Booking;
 
 /**
 
-Sefer sınıfı, havayolu şirketinin uçuşlarına ilişkin bilgileri tutar ve bu bilgileri yönetir.
+Sefer sınıfı, havayolu sirketinin ucuslarına iliskin bilgileri tutar ve bu bilgileri yonetir.
 */
 public class Sefer {
 	/**
@@ -26,24 +26,24 @@ public class Sefer {
 	private String sefer_destinasyon;
 
 	/**
-	 * Seferin uçuş kodu.
+	 * Seferin ucus kodu.
 	 */
 	private String sefer_ucuskodu;
 
 /**
 
-Boş kurucu method.
+Bos kurucu method.
 */
 public Sefer() {
 }
 /**
 
-Sefer bilgilerini tutan objeyi oluşturur.
+Sefer bilgilerini tutan objeyi olusturur.
 @param sefer_id Seferin ID'si
 @param sefer_no Sefer numarası
 @param sefer_adi Sefer adı
 @param sefer_destinasyon Seferin hedef destinasyonu
-@param sefer_ucuskodu Uçağın kodu
+@param sefer_ucuskodu Ucagın kodu
 */
 public Sefer(int sefer_id, int sefer_no, String sefer_adi, String sefer_destinasyon, String sefer_ucuskodu) {
 this.sefer_id = sefer_id;
@@ -59,20 +59,20 @@ Sefer bilgilerini yazdırır.
 */
 public void seferYazdir(Sefer sefer) {
 Sefer sefer1 = new Sefer(sefer_id, sefer_no, sefer_adi, sefer_destinasyon, sefer_ucuskodu);
-System.out.println("*******************************Uçuş Bilgisi*********************************************");
+System.out.println("*******************************Ucus Bilgisi*********************************************");
 System.out.println("ID: " + getSeferAdi());
-System.out.println("Uçuş Numarası: " + getSeferNo());
-System.out.println("Uçuş Adı: " + getSeferAdi());
+System.out.println("Ucus Numarası: " + getSeferNo());
+System.out.println("Ucus Adı: " + getSeferAdi());
 System.out.println("Hedef: " + getSeferDestinasyon());
-System.out.println("Uçak Kodu: " + getSeferUcuskodu());
-System.out.println("*******************************Uçuş Bilgisi*********************************************");
+System.out.println("Ucak Kodu: " + getSeferUcuskodu());
+System.out.println("*******************************Ucus Bilgisi*********************************************");
 System.out.println("");
 }
 /**
 
-Verilen Ucak objesinin klonunu oluşturur.
-@param ucak Uçak objesi
-@return Klonlanmış Ucak objesi
+Verilen Ucak objesinin klonunu olusturur.
+@param ucak Ucak objesi
+@return Klonlanmıs Ucak objesi
 */
 public Ucak ucakKlonla(Ucak ucak) {
 Ucak clonedUcak = ucak.clone(); // clone the Ucak object
@@ -80,22 +80,22 @@ return clonedUcak;
 }
 /**
 
-Var olan uçuşları sorgulamak için observer tasarım deseni uygular.
+Var olan ucusları sorgulamak icin observer tasarım deseni uygular.
 */
 public void sorgulaSefer() {
-	// Var olan uçuşları sorgulamak için gözlemci tasarım deseni uygulanır.
+	// Var olan ucusları sorgulamak icin gozlemci tasarım deseni uygulanır.
 }
 /**
 
-Var olan uçuşları güncellemek için observer tasarım deseni uygular.
+Var olan ucusları guncellemek icin observer tasarım deseni uygular.
 */
 public void guncelleSefer() {
-	// Güncelleme işlemi için gözlemci tasarım deseni uygulanır.
+	// Guncelleme islemi icin gozlemci tasarım deseni uygulanır.
 }
 
 /**
 
-Sefer sınıfının sefer ID'sini döndüren metodu.
+Sefer sınıfının sefer ID'sini donduren metodu.
 @return Seferin ID'si.
 */
 public int getSeferId() {
@@ -111,7 +111,7 @@ this.sefer_id = sefer_id;
 }
 /**
 
-Sefer sınıfının sefer numarasını döndüren metodu.
+Sefer sınıfının sefer numarasını donduren metodu.
 @return Seferin numarası.
 */
 public int getSeferNo() {
@@ -127,7 +127,7 @@ this.sefer_no = sefer_no;
 }
 /**
 
-Sefer sınıfının sefer adını döndüren metodu.
+Sefer sınıfının sefer adını donduren metodu.
 @return Seferin adı.
 */
 public String getSeferAdi() {
@@ -143,7 +143,7 @@ this.sefer_adi = sefer_adi;
 }
 /**
 
-Sefer sınıfının hedef destinasyonunu döndüren metodu.
+Sefer sınıfının hedef destinasyonunu donduren metodu.
 @return Seferin hedef destinasyonu.
 */
 public String getSeferDestinasyon() {
@@ -159,16 +159,16 @@ this.sefer_destinasyon = sefer_destinasyon;
 }
 /**
 
-Sefer sınıfının uçak kodunu döndüren metodu.
-@return Seferin uçak kodu.
+Sefer sınıfının ucak kodunu donduren metodu.
+@return Seferin ucak kodu.
 */
 public String getSeferUcuskodu() {
 return sefer_ucuskodu;
 }
 /**
 
-Sefer sınıfının uçak kodunu ayarlayan metodu.
-@param sefer_ucuskodu Seferin uçak kodu.
+Sefer sınıfının ucak kodunu ayarlayan metodu.
+@param sefer_ucuskodu Seferin ucak kodu.
 */
 public void setSeferUcuskodu(String sefer_ucuskodu) {
 this.sefer_ucuskodu = sefer_ucuskodu;

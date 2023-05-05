@@ -2,30 +2,30 @@ package Airline_Booking;
 
 /**
 
-Ucak sınıfı, uçak bilgilerini tutar ve uçak nesneleri oluşturur.
+Ucak sınıfı, ucak bilgilerini tutar ve ucak nesneleri olusturur.
 */
 public class Ucak  {
-	/** Uçak ID'si */
+	/** Ucak ID'si */
 	private int ucak_id;
 
-	/** Uçuş Numarası */
+	/** Ucus Numarası */
 	private String ucak_kuyrukkod;
 
-	/** Uçak Adı */
+	/** Ucak Adı */
 	private String ucak_marka;
 
 	/** Hedef */
 	private String ucak_model;
 
-	/** Uçak gövde tipi */
+	/** Ucak govde tipi */
 	private String ucak_govdetipi;
 
-	/** Uçak koltuk sayısı */
+	/** Ucak koltuk sayısı */
 	private int ucak_koltuksayisi;
 
 	/**
 
-	Uçak sınıfının varsayılan yapıcı metodu.
+	Ucak sınıfının varsayılan yapıcı metodu.
 	
 */
     public Ucak() {
@@ -33,14 +33,14 @@ public class Ucak  {
     }
 	/**
 
-	Yeni bir uçak nesnesi oluşturur.
-	@param ucak_id Uçak ID'si
-	@param ucak_kuyrukkod Uçuş Numarası
-	@param ucak_marka Uçak Adı
+	Yeni bir ucak nesnesi olusturur.
+	@param ucak_id Ucak ID'si
+	@param ucak_kuyrukkod Ucus Numarası
+	@param ucak_marka Ucak Adı
 	@param ucak_model Hedef
-	@param ucak_govdetipi Uçak gövde tipi
-	@param ucak_koltuksayisi Uçak koltuk sayısı
-	@return Yeni oluşturulan uçak nesnesi
+	@param ucak_govdetipi Ucak govde tipi
+	@param ucak_koltuksayisi Ucak koltuk sayısı
+	@return Yeni olusturulan ucak nesnesi
 	*/
     public static Ucak ucakOlustur(int ucak_id, String ucak_kuyrukkod, String ucak_marka, String ucak_model, String ucak_govdetipi, int ucak_koltuksayisi) {
     	 Ucak ucak = new Ucak(ucak_id, ucak_kuyrukkod, ucak_marka, ucak_model, ucak_govdetipi, ucak_koltuksayisi);
@@ -49,28 +49,28 @@ public class Ucak  {
     
     /**
 
-    Uçak bilgilerini yazdırır.
-    @param ucak Yazdırılacak uçak nesnesi
+    Ucak bilgilerini yazdırır.
+    @param ucak Yazdırılacak ucak nesnesi
     */
     public void ucakYazdir(Ucak ucak) {
     	 Ucak ucak1 = new Ucak(ucak_id, ucak_kuyrukkod, ucak_marka, ucak_model, ucak_govdetipi, ucak_koltuksayisi);
-    	System.out.println("*****************************Uçak Bilgisi************************");
-     	System.out.println("Uçak ID'si: " + getUcak_id());
-     	System.out.println("Uçuş Numarası: " + getUcak_kuyrukkod());
-     	System.out.println("Uçak Adı: " + getUcak_marka());
+    	System.out.println("*****************************Ucak Bilgisi************************");
+     	System.out.println("Ucak ID'si: " + getUcak_id());
+     	System.out.println("Ucus Numarası: " + getUcak_kuyrukkod());
+     	System.out.println("Ucak Adı: " + getUcak_marka());
      	System.out.println("Hedef: " + getUcak_model());
-     	System.out.println("Uçak Kodu: " + getUcak_koltuksayisi());
-         System.out.println("*****************************Uçak Bilgisi************************");
+     	System.out.println("Ucak Kodu: " + getUcak_koltuksayisi());
+         System.out.println("*****************************Ucak Bilgisi************************");
          System.out.println("");
     }
     /**
-     * Yeni bir uçak nesnesi oluşturur.
-     * @param ucak_id Uçak ID'si
-     * @param ucak_kuyrukkod Uçuş Numarası
-     * @param ucak_marka Uçak Adı
+     * Yeni bir ucak nesnesi olusturur.
+     * @param ucak_id Ucak ID'si
+     * @param ucak_kuyrukkod Ucus Numarası
+     * @param ucak_marka Ucak Adı
      * @param ucak_model Hedef 
-     * @param ucak_govdetipi Uçağın gövde tipi
-     * @param ucak_koltuksayisi Uçağın koltuk sayısı
+     * @param ucak_govdetipi Ucagın govde tipi
+     * @param ucak_koltuksayisi Ucagın koltuk sayısı
 	*/
     public Ucak(int ucak_id, String ucak_kuyrukkod, String ucak_marka, String ucak_model, String ucak_govdetipi, int ucak_koltuksayisi) {
         this.ucak_id = ucak_id;
@@ -83,8 +83,8 @@ public class Ucak  {
     
     /**
 
-    Uçak nesnesinin kopyasını oluşturur.
-    @return Uçak nesnesinin kopyası.
+    Ucak nesnesinin kopyasını olusturur.
+    @return Ucak nesnesinin kopyası.
     */
     @Override
     public Ucak clone() {
@@ -92,96 +92,96 @@ public class Ucak  {
     }
     /**
 
-    Uçağın uçuş numarasını döndürür.
-    @return Uçuş numarası.
+    Ucagın ucus numarasını dondurur.
+    @return Ucus numarası.
     */
     public Object getUcak_kuyrukkod() {
     return ucak_kuyrukkod;
     }
     /**
 
-    Uçağın ID'sini ayarlar.
-    @param ucak_id Uçak ID'si.
+    Ucagın ID'sini ayarlar.
+    @param ucak_id Ucak ID'si.
     */
     public void setUcak_id(int ucak_id) {
     this.ucak_id = ucak_id;
     }
     /**
 
-    Uçağın uçuş numarasını ayarlar.
-    @param ucak_kuyrukkod Uçuş numarası.
+    Ucagın ucus numarasını ayarlar.
+    @param ucak_kuyrukkod Ucus numarası.
     */
     public void setUcak_kuyrukkod(String ucak_kuyrukkod) {
     this.ucak_kuyrukkod = ucak_kuyrukkod;
     }
     /**
 
-    Uçağın markasını ayarlar.
-    @param ucak_marka Uçak markası.
+    Ucagın markasını ayarlar.
+    @param ucak_marka Ucak markası.
     */
     public void setUcak_marka(String ucak_marka) {
     this.ucak_marka = ucak_marka;
     }
     /**
 
-    Uçağın modelini ayarlar.
-    @param ucak_model Uçak modeli.
+    Ucagın modelini ayarlar.
+    @param ucak_model Ucak modeli.
     */
     public void setUcak_model(String ucak_model) {
     this.ucak_model = ucak_model;
     }
     /**
 
-    Uçağın gövde tipini ayarlar.
-    @param ucak_govdetipi Uçak gövde tipi.
+    Ucagın govde tipini ayarlar.
+    @param ucak_govdetipi Ucak govde tipi.
     */
     public void setUcak_govdetipi(String ucak_govdetipi) {
     this.ucak_govdetipi = ucak_govdetipi;
     }
     /**
 
-    Uçağın koltuk sayısını ayarlar.
-    @param ucak_koltuksayisi Uçak koltuk sayısı.
+    Ucagın koltuk sayısını ayarlar.
+    @param ucak_koltuksayisi Ucak koltuk sayısı.
     */
     public void setUcak_koltuksayisi(int ucak_koltuksayisi) {
     this.ucak_koltuksayisi = ucak_koltuksayisi;
     }
     /**
 
-    Uçağın ID'sini döndürür.
-    @return Uçak ID'si.
+    Ucagın ID'sini dondurur.
+    @return Ucak ID'si.
     */
     public int getUcak_id() {
     return ucak_id;
     }
     /**
 
-    Uçağın markasını döndürür.
-    @return Uçak markası.
+    Ucagın markasını dondurur.
+    @return Ucak markası.
     */
     public String getUcak_marka() {
     return ucak_marka;
     }
     /**
 
-    Uçağın modelini döndürür.
-    @return Uçak modeli.
+    Ucagın modelini dondurur.
+    @return Ucak modeli.
     */
     public String getUcak_model() {
     return ucak_model;
     }
     /**
 
-    Uçağın gövde tipini döndürür.
-    @return Uçak gövde tipi.
+    Ucagın govde tipini dondurur.
+    @return Ucak govde tipi.
     */
     public String getUcak_govdetipi() {
     return ucak_govdetipi;
     }
     /**
 
-    Uçağın koltuk sayısını döndürür.
-    @return Uçak koltuk sayısı.
+    Ucagın koltuk sayısını dondurur.
+    @return Ucak koltuk sayısı.
     */
     public int getUcak_koltuksayisi() {
     return ucak_koltuksayisi;

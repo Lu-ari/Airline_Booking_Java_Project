@@ -1,41 +1,41 @@
 package Airline_Booking;
 
 /**
- * Bu sınıf, ödemelerin oluşturulması ve ödeme işlemlerinin yapılması için kullanılır.
- * Odeme sınıfı, bir Factory nesnesi alarak ödeme işlemlerinde kullanılacak ödeme yöntemlerini oluşturmak için kullanılır.
+ * Bu sınıf, odemelerin olusturulması ve odeme islemlerinin yapılması icin kullanılır.
+ * Odeme sınıfı, bir Factory nesnesi alarak odeme islemlerinde kullanılacak odeme yontemlerini olusturmak icin kullanılır.
  */
 public class Odeme {
 	/**
-	 * Odeme sınıfında ödeme işlemleri için kullanılan ödeme ID'si.
+	 * Odeme sınıfında odeme islemleri icin kullanılan odeme ID'si.
 	 */
 	private int Odeme_id;
 
 	/**
-	 * Ödeme tutarı.
+	 * odeme tutarı.
 	 */
 	private int Odeme_tutar;
 
 	/**
-	 * Ödeme tarihi.
+	 * odeme tarihi.
 	 */
 	private String Odeme_tarih;
 
 	/**
-	 * Factory nesnesi, farklı ödeme türleri için ödeme yapısı oluşturmak için kullanılır.
+	 * Factory nesnesi, farklı odeme turleri icin odeme yapısı olusturmak icin kullanılır.
 	 */
 	private Factory factory;
 
     /**
      * Odeme sınıfı kurucu fonksiyonu, Factory nesnesi alır.
-     * @param factory ödeme işlemlerinde kullanılacak ödeme yöntemlerini oluşturmak için kullanılacak Factory nesnesi.
+     * @param factory odeme islemlerinde kullanılacak odeme yontemlerini olusturmak icin kullanılacak Factory nesnesi.
      */
     public Odeme(Factory factory) {
         this.factory = factory;
     }
     
     /**
-     * Kredi kartı ile ödeme yapmak için kullanılan fonksiyon.
-     * @param yontem ödeme yöntemi olarak kullanılacak string değeri alır.
+     * Kredi kartı ile odeme yapmak icin kullanılan fonksiyon.
+     * @param yontem odeme yontemi olarak kullanılacak string degeri alır.
      */
     public void Odeme_kredikartihesapla(String yontem) {
         OdemeYontemi odemeYontemi = factory.createOdemeYontemi(yontem);
@@ -47,8 +47,8 @@ public class Odeme {
     }
     
     /**
-     * Nakit para ile ödeme yapmak için kullanılan fonksiyon.
-     * @param yontem ödeme yöntemi olarak kullanılacak string değeri alır.
+     * Nakit para ile odeme yapmak icin kullanılan fonksiyon.
+     * @param yontem odeme yontemi olarak kullanılacak string degeri alır.
      */
     public void Odeme_nakithesapla(String yontem) {
         OdemeYontemi odemeYontemi = factory.createOdemeYontemi(yontem);
@@ -60,31 +60,31 @@ public class Odeme {
     }
     
     /**
-     * Ödeme ID'sini döndüren getter fonksiyonu.
-     * @return ödeme işlemine ait ID değeri.
+     * odeme ID'sini donduren getter fonksiyonu.
+     * @return odeme islemine ait ID degeri.
      */
     public int getOdeme_id() {
         return Odeme_id;
     }
 
     /**
-     * Ödeme ID'sini set eden setter fonksiyonu.
-     * @param Odeme_id ödeme işlemine ait ID değeri.
+     * odeme ID'sini set eden setter fonksiyonu.
+     * @param Odeme_id odeme islemine ait ID degeri.
      */
     public void setOdeme_id(int Odeme_id) {
         this.Odeme_id = Odeme_id;
     }
 
     /**
-     *  Odeme_tutar Ödeme tutarını döndüren getter fonksiyonu.
-     * @return ödeme işlemine ait tutar değeri.
+     *  Odeme_tutar odeme tutarını donduren getter fonksiyonu.
+     * @return odeme islemine ait tutar degeri.
      */
     public int getOdeme_tutar() {
         return Odeme_tutar;
     }
 
     /**
-    @param Odeme_tutar ödeme işlemine ait tutarı temsil eden int değeri alır.
+    @param Odeme_tutar odeme islemine ait tutarı temsil eden int degeri alır.
     */
     public void setOdeme_tutar(int Odeme_tutar) {
     this.Odeme_tutar = Odeme_tutar;
@@ -92,16 +92,16 @@ public class Odeme {
     
 
     /**
-     * Ödeme tarihini getiren getter fonksiyonu.
-     * @return ödeme işlemi gerçekleştirilen tarih değerini temsil eden String değerini döndürür.
+     * odeme tarihini getiren getter fonksiyonu.
+     * @return odeme islemi gerceklestirilen tarih degerini temsil eden String degerini dondurur.
      */
     public String getOdeme_tarih() {
         return Odeme_tarih;
     }
 
     /**
-     * Ödeme tarihini set eden setter fonksiyonu.
-     * @param Odeme_tarih ödeme işlemine ait tarihi temsil eden String değeri alır.
+     * odeme tarihini set eden setter fonksiyonu.
+     * @param Odeme_tarih odeme islemine ait tarihi temsil eden String degeri alır.
      */
     public void setOdeme_tarih(String Odeme_tarih) {
         this.Odeme_tarih = Odeme_tarih;

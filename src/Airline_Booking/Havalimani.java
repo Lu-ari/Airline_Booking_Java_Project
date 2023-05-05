@@ -1,12 +1,12 @@
 package Airline_Booking;
 
 /**
- * `Havalimani` sınıfı, havayolu işletmeleri tarafından kullanılan havalimanlarının temsili için kullanılır.
+ * `Havalimani` sınıfı, havayolu isletmeleri tarafından kullanılan havalimanlarının temsili icin kullanılır.
  */
 public class Havalimani {
     
     /**
-     * Tek örneklik tasarım deseni uygulamak için kullanılan sınıf örneği.
+     * Tek orneklik tasarım deseni uygulamak icin kullanılan sınıf ornegi.
      */
     private static Havalimani instance = new Havalimani();
     
@@ -17,27 +17,27 @@ public class Havalimani {
 
     /**
      * `Havalimani` sınıfının yapıcı metodu.
-     * Bu metod, yalnızca bu sınıf içerisinde çağrılabilir.
+     * Bu metod, yalnızca bu sınıf icerisinde cagrılabilir.
      */
     private Havalimani() {
        // Yapıcı metodun uygulaması
     }
 
     /**
-     * Tek örneklik tasarım deseni uygulamak için kullanılan sınıf örneğini döndürür.
-     * @return `Havalimani` sınıfının örneği
+     * Tek orneklik tasarım deseni uygulamak icin kullanılan sınıf ornegini dondurur.
+     * @return `Havalimani` sınıfının ornegi
      */
     public static Havalimani getInstance() {
-       // Singleton tasarım deseni için örnek alma metodunun uygulaması
+       // Singleton tasarım deseni icin ornek alma metodunun uygulaması
        return instance;
     }
 
     /**
-     * Havalimanı kodunu döndürür.
+     * Havalimanı kodunu dondurur.
      * @return Havalimanı kodu
      */
     public String getirHavalimaniKodu() {
-       // Singleton tasarım deseni için havalimanı kodunu alma metodunun uygulaması
+       // Singleton tasarım deseni icin havalimanı kodunu alma metodunun uygulaması
        return havalimani_kodu;
     }
     
@@ -50,7 +50,7 @@ public class Havalimani {
     }
 
     /**
-     * Havalimanı kodunu döndürür.
+     * Havalimanı kodunu dondurur.
      * @return Havalimanı kodu
      */
     public String getHavalimaniKodu() {

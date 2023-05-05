@@ -1,23 +1,23 @@
 package Airline_Booking;
 
 /**
- * Soyut fabrika sınıfı, bilet ve ödeme yöntemi nesnelerinin yaratılması için arayüz sağlar.
+ * Soyut fabrika sinifi, bilet ve odeme yontemi nesnelerinin yaratilmas icin arayuz saglar.
  */
 public abstract class AbstractFactory {
     
     /**
-     * Belirtilen türde bir bilet nesnesi yaratır.
+     * Belirtilen turde bir bilet nesnesi yaratir.
      *
-     * @param type Bilet türü
-     * @return Belirtilen türde bir bilet nesnesi
+     * @param type Bilet turu
+     * @return Belirtilen turde bir bilet nesnesi
      */
     public abstract Bilet createBilet(String type);
     
     /**
-     * Belirtilen türde bir ödeme yöntemi nesnesi yaratır.
+     * Belirtilen turde bir odeme yontemi nesnesi yaratir.
      *
-     * @param type Ödeme yöntemi türü
-     * @return Belirtilen türde bir ödeme yöntemi nesnesi
+     * @param type Odeme yontemi turu
+     * @return Belirtilen turde bir odeme yontemi nesnesi
      */
     public abstract OdemeYontemi createOdemeYontemi(String type);
 }
