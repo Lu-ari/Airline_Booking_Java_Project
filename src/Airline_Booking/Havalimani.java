@@ -1,28 +1,59 @@
 package Airline_Booking;
 
-//Havalimani Class
+/**
+ * `Havalimani` sınıfı, havayolu işletmeleri tarafından kullanılan havalimanlarının temsili için kullanılır.
+ */
 public class Havalimani {
-private static Havalimani instance = new Havalimani();
-private String havalimani_kodu;
+    
+    /**
+     * Tek örneklik tasarım deseni uygulamak için kullanılan sınıf örneği.
+     */
+    private static Havalimani instance = new Havalimani();
+    
+    /**
+     * Havalimanının kodunu tutar.
+     */
+    private String havalimani_kodu;
 
-private Havalimani() {
-   // Constructor implementation
-}
+    /**
+     * `Havalimani` sınıfının yapıcı metodu.
+     * Bu metod, yalnızca bu sınıf içerisinde çağrılabilir.
+     */
+    private Havalimani() {
+       // Yapıcı metodun uygulaması
+    }
 
-public static Havalimani getInstance() {
-   // Implementation of singleton design pattern for getting the instance of airport object
-   return instance;
-}
+    /**
+     * Tek örneklik tasarım deseni uygulamak için kullanılan sınıf örneğini döndürür.
+     * @return `Havalimani` sınıfının örneği
+     */
+    public static Havalimani getInstance() {
+       // Singleton tasarım deseni için örnek alma metodunun uygulaması
+       return instance;
+    }
 
-public String getirHavalimaniKodu() {
-   // Implementation of singleton design pattern for getting airport code
-   return havalimani_kodu;
-}
-public void setHavalimaniKodu(String kod) {
-    havalimani_kodu = kod;
-}
+    /**
+     * Havalimanı kodunu döndürür.
+     * @return Havalimanı kodu
+     */
+    public String getirHavalimaniKodu() {
+       // Singleton tasarım deseni için havalimanı kodunu alma metodunun uygulaması
+       return havalimani_kodu;
+    }
+    
+    /**
+     * Havalimanı kodunu ayarlar.
+     * @param kod Havalimanı kodu
+     */
+    public void setHavalimaniKodu(String kod) {
+        havalimani_kodu = kod;
+    }
 
-public String getHavalimaniKodu() {
-    return havalimani_kodu;
-}
-}
+    /**
+     * Havalimanı kodunu döndürür.
+     * @return Havalimanı kodu
+     */
+    public String getHavalimaniKodu() {
+        return havalimani_kodu;
+    }
+} 

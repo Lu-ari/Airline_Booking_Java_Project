@@ -1,11 +1,39 @@
 package Airline_Booking;
 
-public class Rezervasyon {
-    private int rezervasyon_id;
-    private int rezervasyon_no;
-    private String rezervasyon_tarih;
-    private int rezervasyon_koltukno;
+/**
 
+Rezervasyon sınıfı, bir rezervasyonun özelliklerini tanımlar ve yönetir.
+*/
+
+public class Rezervasyon {
+	/*
+
+	Rezervasyonun benzersiz kimliği.
+	*/
+	private int rezervasyon_id;
+	/**
+
+	Rezervasyon numarası.
+	*/
+	private int rezervasyon_no;
+	/**
+
+	Rezervasyonun yapıldığı tarih.
+	*/
+	private String rezervasyon_tarih;
+	/**
+
+	Rezervasyonun yapıldığı koltuk numarası.
+	*/
+	private int rezervasyon_koltukno;
+	/**
+
+	Rezervasyon nesnesinin özelliklerini belirten yapıcı metot.
+	@param rezervasyon_id Rezervasyonun benzersiz kimliği.
+	@param rezervasyon_no Rezervasyon numarası.
+	@param rezervasyon_tarih Rezervasyonun yapıldığı tarih.
+	@param rezervasyon_koltukno Rezervasyonun yapıldığı koltuk numarası.
+	*/
     public Rezervasyon(int rezervasyon_id, int rezervasyon_no, String rezervasyon_tarih, int rezervasyon_koltukno) {
         this.rezervasyon_id = rezervasyon_id;
         this.rezervasyon_no = rezervasyon_no;
@@ -14,59 +42,105 @@ public class Rezervasyon {
     }
 
     public void Rezervasyon_guncelle() {
-        // update reservation in database
-    }
+    	/**
 
+    	Rezervasyonu günceller.
+    	*/
+    }
+    /**
+
+    Yeni bir rezervasyon oluşturur ve bilgilerini ekrana yazdırır.
+    */
     public void Rezervasyon_olustur() {
-        // create new reservation 
-    	
-    	 
-    	
-         
          Rezervasyon r1 = new Rezervasyon(rezervasyon_id,rezervasyon_no,rezervasyon_tarih,rezervasyon_koltukno);
          System.out.println("Rezervasyon ID: " + r1.getRezervasyon_id());
          System.out.println("Rezervasyon No: " + r1.getRezervasyon_no());
          System.out.println("Rezervasyon Tarih: " + r1.getRezervasyon_tarih());
          System.out.println("Rezervasyon Koltuk No: " + r1.getRezervasyon_koltukno());
     }
+    
+    /**
+
+    Verilen rezervasyon kimliğine göre, rezervasyonu veritabanından bulur.
+    */
 
     public void Rezervasyon_bul() {
-        // find reservation in database
+    	// veritabanında rezervasyonu bul
     }
+    /**
 
+    Verilen rezervasyon kimliğine göre, rezervasyonu veritabanından siler.
+    */
     public void Rezervasyon_sil() {
-        // delete reservation from database
+    	// veritabanından rezervasyonu sil
     }
 
-    // getters and setters
+    /**
+     * Rezervasyonun ID'sini getirir.
+     *
+     * @return Rezervasyonun ID'si.
+     */
     public int getRezervasyon_id() {
         return rezervasyon_id;
     }
-
+    /**
+    * Rezervasyonun ID'sini set eder.
+    *
+    * @param rezervasyon_id Rezervasyonun yeni ID'si.
+    */
     public void setRezervasyon_id(int rezervasyon_id) {
         this.rezervasyon_id = rezervasyon_id;
     }
+    /**
+     * Rezervasyonun numarasını getirir.
+     *
+     * @return Rezervasyonun numarası.
+     */
 
     public int getRezervasyon_no() {
         return rezervasyon_no;
     }
-
+    /**
+     * Rezervasyonun numarasını set eder.
+     *
+     * @param rezervasyon_no Rezervasyonun yeni numarası.
+     */
     public void setRezervasyon_no(int rezervasyon_no) {
         this.rezervasyon_no = rezervasyon_no;
     }
+    
+    /**
+     * Rezervasyonun tarihini getirir.
+     *
+     * @return Rezervasyonun tarihi.
+     */
 
     public String getRezervasyon_tarih() {
         return rezervasyon_tarih;
     }
+    /**
+     * Rezervasyonun tarihini set eder.
+     *
+     * @param rezervasyon_tarih Rezervasyonun yeni tarihi.
+     */
 
     public void setRezervasyon_tarih(String rezervasyon_tarih) {
         this.rezervasyon_tarih = rezervasyon_tarih;
     }
+    /**
+     * Rezervasyonun koltuk numarasını getirir.
+     *
+     * @return Rezervasyonun koltuk numarası.
+     */
 
     public int getRezervasyon_koltukno() {
         return rezervasyon_koltukno;
     }
-
+    /**
+     * Rezervasyonun koltuk numarasını set eder.
+     *
+     * @param rezervasyon_koltukno Rezervasyonun yeni koltuk numarası.
+     */
     public void setRezervasyon_koltukno(int rezervasyon_koltukno) {
         this.rezervasyon_koltukno = rezervasyon_koltukno;
     }
