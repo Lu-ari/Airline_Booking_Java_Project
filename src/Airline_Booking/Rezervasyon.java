@@ -6,10 +6,9 @@ Rezervasyon sınıfı, bir rezervasyonun özelliklerini tanımlar ve yönetir.
 */
 
 public class Rezervasyon {
-	/*
-
-	Rezervasyonun benzersiz kimliği.
-	*/
+	/**
+	 * Rezervasyonun benzersiz kimliği.
+	 * */
 	private int rezervasyon_id;
 	/**
 
@@ -26,9 +25,7 @@ public class Rezervasyon {
 	Rezervasyonun yapıldığı koltuk numarası.
 	*/
 	private int rezervasyon_koltukno;
-	/**
-
-	Rezervasyon nesnesinin özelliklerini belirten yapıcı metot.
+	/**Rezervasyon nesnesinin özelliklerini belirten yapıcı metot.
 	@param rezervasyon_id Rezervasyonun benzersiz kimliği.
 	@param rezervasyon_no Rezervasyon numarası.
 	@param rezervasyon_tarih Rezervasyonun yapıldığı tarih.
@@ -40,12 +37,13 @@ public class Rezervasyon {
         this.rezervasyon_tarih = rezervasyon_tarih;
         this.rezervasyon_koltukno = rezervasyon_koltukno;
     }
+    
+    /**
 
+	Rezervasyonu günceller.
+	*/
     public void Rezervasyon_guncelle() {
-    	/**
-
-    	Rezervasyonu günceller.
-    	*/
+    	
     }
     /**
 

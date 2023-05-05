@@ -27,13 +27,6 @@ public class Ucak  {
 
 	Uçak sınıfının varsayılan yapıcı metodu.
 	
-	
-	@param ucak_id Uçağın ID numarası
-	@param ucak_kuyrukkod Uçağın uçuş numarası
-	@param ucak_marka Uçağın markası
-	@param ucak_model Uçağın modeli
-	@param ucak_govdetipi Uçağın gövde tipi
-	@param ucak_koltuksayisi Uçağın koltuk sayısı
 */
     public Ucak() {
      
@@ -71,16 +64,14 @@ public class Ucak  {
          System.out.println("");
     }
     /**
-
-    Yeni bir uçak nesnesi oluşturur.
-    @param ucak_id Uçak ID'si
-    @param ucak_kuyrukkod Uçuş Numarası
-    @param ucak_marka Uçak Adı
-    @param ucak_model Hedef
-    @param ucak_govdetipi  
-    @param ucak_govdetipi Uçağın gövde tipi
-	@param ucak_koltuksayisi Uçağın koltuk sayısı
-	@return Yeni oluşturulan Ucak nesnesi. */
+     * Yeni bir uçak nesnesi oluşturur.
+     * @param ucak_id Uçak ID'si
+     * @param ucak_kuyrukkod Uçuş Numarası
+     * @param ucak_marka Uçak Adı
+     * @param ucak_model Hedef 
+     * @param ucak_govdetipi Uçağın gövde tipi
+     * @param ucak_koltuksayisi Uçağın koltuk sayısı
+	*/
     public Ucak(int ucak_id, String ucak_kuyrukkod, String ucak_marka, String ucak_model, String ucak_govdetipi, int ucak_koltuksayisi) {
         this.ucak_id = ucak_id;
         this.ucak_kuyrukkod = ucak_kuyrukkod;

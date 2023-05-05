@@ -1,15 +1,15 @@
 package Airline_Booking;
 
 /**
- * Factory sınıfı, farklı ödeme yöntemlerini oluşturmak için kullanılır.
+ * Factory sinifi, farkli odeme yontemlerini olusturmak icin kullanilir.
  */
 public class Factory {
     
     /**
-     * Verilen parametreye göre uygun bir ödeme yöntemi nesnesi oluşturur ve döndürür.
+     * Verilen parametreye gore uygun bir odeme yontemi nesnesi olusturur ve dondurur.
      * 
-     * @param type Ödeme yöntemi tipi. Şu anda desteklenen tipler: "KrediKarti", "Nakit"
-     * @return Oluşturulan ödeme yöntemi nesnesi. Verilen tip desteklenmiyorsa null döndürür.
+     * @param type Odeme yontemi tipi. Su anda desteklenen tipler: "KrediKarti", "Nakit"
+     * @return Olusturulan odeme yontemi nesnesi. Verilen tip desteklenmiyorsa null dondurur.
      */
     public OdemeYontemi createOdemeYontemi(String type) {
         if (type.equals("KrediKarti")) {

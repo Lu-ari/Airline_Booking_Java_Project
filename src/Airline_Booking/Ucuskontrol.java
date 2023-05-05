@@ -25,6 +25,9 @@ Bu sınıf, uçuşları kontrol etmek için havalimanı kodlarını kullanır.
 */
 public class Ucuskontrol {
 
+	/**
+	 * Havalimanı nesnesi oluşturmak için kullanılan Singleton sınıfı.
+	 */
 private Havalimani havalimani = Havalimani.getInstance();
 
 /**

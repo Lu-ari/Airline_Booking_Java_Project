@@ -38,18 +38,13 @@ public class Ekonomi implements Bilet {
 	 * Biletin koltuk numarasını tutar.
 	 */
 	private int biletKoltukNo;
-    
-    /**
-     * Ekonomi sınıfı için bir constructor
-     * 
-     * @param ekstrabagaj Ekonomik ekstra bagaj tutarı.
-     *@param biletId Biletin ID numarası.
-     *@param biletNo Bilet numarası.
-     *@param biletFiyat Biletin fiyatı.
-     *@param biletTarih Biletin satın alındığı tarih.
-     *@param biletKoltukNo Biletin koltuk numarası.
-     * @param ekstrabagaj Ekonomi biletinde ekstra bagaj miktarı
-     */
+	/**
+	 * Ekonomi sınıfının yapıcı metodu, Ekonomi seyahat sınıfı biletlerinin ekstra bagaj özelliğini ayarlar.
+	 *
+	 * @param ekstrabagaj Ekonomi seyahat sınıfının ekstra bagaj özelliği
+	 */
+
+   
     public Ekonomi(String ekstrabagaj) {
         this.Ekonomik_ekstrabagaj = ekstrabagaj;
     }

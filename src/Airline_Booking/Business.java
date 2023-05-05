@@ -1,43 +1,47 @@
 package Airline_Booking;
 
 /**
- * Bilet arayüzünü uygulayan Business sınıfı.
+ * Business sınıfı, Bilet arayüzünü uygular ve Business seyahat sınıfı biletlerinin özelliklerini tutar.
  */
 public class Business implements Bilet {
-	/**
-	 * İşletme VIP durumunu belirten değişken.
-	 */
-	private String Business_vip;
-
-	/**
-	 * Biletin kimlik numarasını belirten değişken.
-	 */
-	private int biletId;
-
-	/**
-	 * Bilet numarasını belirten değişken.
-	 */
-	private int biletNo;
-
-	/**
-	 * Bilet numarasını belirten değişken.
-	 */
-	private int biletFiyat;
-
-	/**
-	 * Biletin tarihini belirten değişken.
-	 */
-	private String biletTarih;
-
-	/**
-	 * Biletin koltuk numarasını belirten değişken.
-	 */
-	private int biletKoltukNo;
-   
-    /**
-     * Business sınıfının yapıcı metodu, VIP parametresi alır.
-     * @param vip VIP parametresi
+	
+	   /**
+     * Business seyahat sınıfının VIP özelliğini tutar.
      */
+    private String Business_vip;
+
+    /**
+     * Biletin ID'sini tutar.
+     */
+    private int biletId;
+
+    /**
+     * Bilet numarasını tutar.
+     */
+    private int biletNo;
+
+    /**
+     * Biletin fiyatını tutar.
+     */
+    private int biletFiyat;
+
+    /**
+     * Biletin tarihini tutar.
+     */
+    private String biletTarih;
+
+    /**
+     * Biletin koltuk numarasını tutar.
+     */
+    private int biletKoltukNo;
+	
+	
+    /**
+     * Business sınıfının yapıcı metodu, Business seyahat sınıfı biletlerinin VIP özelliğini ayarlar.
+     *
+     * @param vip Business seyahat sınıfının VIP özelliği
+     */
+	
     public Business(String vip) {
         this.Business_vip = vip;
     }
@@ -46,18 +50,7 @@ public class Business implements Bilet {
      * Bilet_guncelle metodu, Bilet arayüzünden uygulanır.
      * Bu sınıfta henüz bir güncelleme işlemi yapılmamaktadır.
      * 
-     * @param vip Business VIP durumu.
-
-	*@param biletId Biletin kimlik numarası.
-
-	*@param biletNo Bilet numarası.
-
-	*@param biletFiyat Biletin fiyatı.
-
-	*@param biletTarih Biletin tarihi.
-
-	*@param biletKoltukNo Biletin koltuk numarası.
-     * 
+     *
      */
     @Override
     public void Bilet_guncelle() {

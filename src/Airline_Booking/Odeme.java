@@ -5,10 +5,25 @@ package Airline_Booking;
  * Odeme sınıfı, bir Factory nesnesi alarak ödeme işlemlerinde kullanılacak ödeme yöntemlerini oluşturmak için kullanılır.
  */
 public class Odeme {
-    private int Odeme_id;
-    private int Odeme_tutar;
-    private String Odeme_tarih;
-    private Factory factory;
+	/**
+	 * Odeme sınıfında ödeme işlemleri için kullanılan ödeme ID'si.
+	 */
+	private int Odeme_id;
+
+	/**
+	 * Ödeme tutarı.
+	 */
+	private int Odeme_tutar;
+
+	/**
+	 * Ödeme tarihi.
+	 */
+	private String Odeme_tarih;
+
+	/**
+	 * Factory nesnesi, farklı ödeme türleri için ödeme yapısı oluşturmak için kullanılır.
+	 */
+	private Factory factory;
 
     /**
      * Odeme sınıfı kurucu fonksiyonu, Factory nesnesi alır.
@@ -61,7 +76,7 @@ public class Odeme {
     }
 
     /**
-     * @param Odeme_tutar Ödeme tutarını döndüren getter fonksiyonu.
+     *  Odeme_tutar Ödeme tutarını döndüren getter fonksiyonu.
      * @return ödeme işlemine ait tutar değeri.
      */
     public int getOdeme_tutar() {

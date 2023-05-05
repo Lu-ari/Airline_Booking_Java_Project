@@ -8,19 +8,20 @@ Bu sınıf, ödeme yöntemlerinin temel özelliklerini içerir.
 */
 
 public abstract class  OdemeYontemi {
-	protected String OdemeYontemi;
+	
 	/**
-
-	Ödeme yöntemi bilgisini almak için kullanılır.
-	@return ödeme yöntemi adı
-	*/
-
+	 * Ödeme yontemi bilgisini saklayan korumalı değişken.
+	 */
+	protected String OdemeYontemi;
+	
+/**
+ * ödeme yöntemi alınır
+ * */
     public void OdemeYontemi_al() {
-    	// ödeme yöntemi alınır
+    	
     }
     /**
-
-    Ödeme yöntemini göndermek için kullanılır.
+     * Ödeme yöntemini göndermek için kullanılır.
     */
 
     public void OdemeYontemi_gonder() {

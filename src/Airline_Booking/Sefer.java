@@ -5,11 +5,30 @@ package Airline_Booking;
 Sefer sınıfı, havayolu şirketinin uçuşlarına ilişkin bilgileri tutar ve bu bilgileri yönetir.
 */
 public class Sefer {
-private int sefer_id;
-private int sefer_no;
-private String sefer_adi;
-private String sefer_destinasyon;
-private String sefer_ucuskodu;
+	/**
+	 * Sefer ID'si.
+	 */
+	private int sefer_id;
+
+	/**
+	 * Sefer numarası.
+	 */
+	private int sefer_no;
+
+	/**
+	 * Seferin adı.
+	 */
+	private String sefer_adi;
+
+	/**
+	 * Seferin destinasyonu.
+	 */
+	private String sefer_destinasyon;
+
+	/**
+	 * Seferin uçuş kodu.
+	 */
+	private String sefer_ucuskodu;
 
 /**
 

@@ -1,50 +1,75 @@
 package Airline_Booking;
 
 import java.util.ArrayList;
-/**
 
-Musteri sınıfı, müşteri bilgilerini tutmak için kullanılır.
-
-@param musteri_id müşteri ID'si
-
-@param musteri_adi müşteri adı
-
-@param musteri_kulladi müşteri kullanıcı adı
-
-@param musteri_sifre müşteri şifresi
-
-@param musteri_mail müşteri e-posta adresi
-
-@param musteri_adres müşteri adresi
-
-@param musteri_tel müşteri telefon numarası
-
-@param musteri_yemektercihi müşteri yemek tercihi
-
-@param musteri_vipkod müşteri VIP kodu
-
-@return Musteri objesi
-*/
-
+/*
+ * @author Mehmet Akif Özdemir
+ * 
+ * */
 import java.util.Scanner;
+
+/**
+ * Musteri sinifi, musteri bilgilerini tutmak icin kullanilir.*/
 public class Musteri {
+	
+	
+	   /**
+     * Müşterinin ID'si.
+     */
     private int musteri_id;
+
+    /**
+     * Müşterinin adı.
+     */
     private String musteri_adi;
+
+    /**
+     * Müşterinin kullanıcı adı.
+     */
     private String musteri_kulladi;
+
+    /**
+     * Müşterinin şifresi.
+     */
     private String musteri_sifre;
+
+    /**
+     * Müşterinin e-posta adresi.
+     */
     private String musteri_mail;
+
+    /**
+     * Müşterinin adresi.
+     */
     private String musteri_adres;
+
+    /**
+     * Müşterinin telefon numarası.
+     */
     private int musteri_tel;
+
+    /**
+     * Müşterinin yemek tercihi.
+     */
     private String musteri_yemektercihi;
+
+    /**
+     * Müşterinin VIP kodu.
+     */
     private int musteri_vipkod;
 
- // Müşterileri saklamak için bir ArrayList oluşturun
-    public static ArrayList<Musteri> customers = new ArrayList<>();
     /**
 
     Musteri sınıfı, müşteri bilgilerini tutmak için kullanılır.
     */
+    public static ArrayList<Musteri> customers = new ArrayList<>();
     
+    /**
+     * Builder tasarım deseninde kullanılan constructor.
+     * Musteri nesnesi oluşturur ve builder nesnesinden gelen verileri kullanarak değişkenlerini ayarlar.
+     *
+     * @param builder Müşteri nesnesi oluşturmak için kullanılan builder nesnesi.
+     */
    
     private Musteri(Builder builder) {
         this.musteri_id = builder.musteri_id;
@@ -57,19 +82,56 @@ public class Musteri {
         this.musteri_yemektercihi = builder.musteri_yemektercihi;
         this.musteri_vipkod = builder.musteri_vipkod;
     }
+    
     /**
-     * Builder tasarım deseni kullanarak Musteri nesneleri oluşturmak için bir yardımcı sınıf.
+     * Builder tasarım deseni kullanılarak Müşteri nesnesi oluşturmak için kullanılan Builder sınıfı.
      */
     public static class Builder {
+        /**
+         * Müşteri ID'si
+         */
         private int musteri_id;
+
+        /**
+         * Müşteri adı
+         */
         private String musteri_adi;
+
+        /**
+         * Müşteri kullanıcı adı
+         */
         private String musteri_kulladi;
+
+        /**
+         * Müşteri şifresi
+         */
         private String musteri_sifre;
+
+        /**
+         * Müşteri e-posta adresi
+         */
         private String musteri_mail;
+
+        /**
+         * Müşteri adresi
+         */
         private String musteri_adres;
+
+        /**
+         * Müşteri telefon numarası
+         */
         private int musteri_tel;
+
+        /**
+         * Müşteri yemek tercihi
+         */
         private String musteri_yemektercihi;
+
+        /**
+         * Müşteri VIP kodu
+         */
         private int musteri_vipkod;
+
         /**
          * Musteri ID değerini ayarlar.
          * @param musteri_id Musteri ID değeri.
@@ -138,9 +200,7 @@ public class Musteri {
             return this;
         }
         /**
-         * Musteri yemek tercihini ayarlar.
-         * @param Musteri yemek tercihini ayarlar.
-         * @param musteri_yemektercihi 
+         * @param musteri_yemektercihi ayarlar.
          * @return Builder nesnesi.
          */
         public Builder musteri_yemektercihi(String musteri_yemektercihi) {
@@ -243,9 +303,14 @@ public class Musteri {
         System.out.println("Müşteri Güncellendi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
     }
     
+    /**
+     * Bu sınıf, Airline Booking System'da müşteri bilgilerini yönetmek için kullanılır.
+     * Main metodu, uygulamayı başlatır ve kullanıcıya gerekli seçenekleri sunar.
+     * 
+     * @param args Komut satırından geçilen argümanlar.
+     */
+   
     public static void main(String[] args) {
-        //1. Müşteriyi oluştur.
-    	
     	
         Musteri customer = new Musteri.Builder()
                 .musteri_id(1)
