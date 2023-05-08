@@ -64,7 +64,7 @@ System.out.println("ID: " + getSeferAdi());
 System.out.println("Ucus Numarası: " + getSeferNo());
 System.out.println("Ucus Adı: " + getSeferAdi());
 System.out.println("Hedef: " + getSeferDestinasyon());
-System.out.println("Ucak Kodu: " + getSeferUcuskodu());
+System.out.println("Ucus Kodu: " + getSeferUcuskodu());
 System.out.println("*******************************Ucus Bilgisi*********************************************");
 System.out.println("");
 }

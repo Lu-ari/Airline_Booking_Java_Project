@@ -58,7 +58,7 @@ public class Ucak  {
      	System.out.println("Ucak ID'si: " + getUcak_id());
      	System.out.println("Ucus Numarası: " + getUcak_kuyrukkod());
      	System.out.println("Ucak Adı: " + getUcak_marka());
-     	System.out.println("Hedef: " + getUcak_model());
+     	System.out.println("Uçak Model: " + getUcak_model());
      	System.out.println("Ucak Kodu: " + getUcak_koltuksayisi());
          System.out.println("*****************************Ucak Bilgisi************************");
          System.out.println("");

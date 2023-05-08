@@ -55,7 +55,7 @@ public class Odeme {
         // Odeme objesi ile bilet hesaplanıyor
         Business business =new Business("30 kg");
         business.Bilet_olustur();
-        Nakit Nakit = new Nakit(600, "TL");
+        Nakit Nakit = new Nakit(6000, "TL");
         Nakit.Nakit_al();
     }
     

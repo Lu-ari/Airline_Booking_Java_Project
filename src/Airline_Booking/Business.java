@@ -68,7 +68,7 @@ public class Business implements Bilet {
         // Yeni bilet nesnesinin ozellikleri set edilir
         newBilet.setBiletId(2);
         newBilet.setBiletNo(1);
-        newBilet.setBiletFiyat(5000);
+        newBilet.setBiletFiyat(6000);
         newBilet.setBiletTarih("2023-05-01");
         newBilet.setBiletKoltukNo(14);
         System.out.println("**************************Business Bilet:********************************");
