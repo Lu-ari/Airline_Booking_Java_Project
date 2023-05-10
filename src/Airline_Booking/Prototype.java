@@ -8,7 +8,7 @@ interface Prototype {
 	
 	/**
 
-	Bu metot, nesnenin kopyasını olusturmak icin kullanılır.
+	Bu metot, nesnenin kopyasini olusturmak icin kullanilir.
 	@return kopya nesne
 	*/
  Prototype clone();

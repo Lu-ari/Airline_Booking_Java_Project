@@ -2,7 +2,7 @@ package Airline_Booking;
 
 /**
 
-Rezervasyon sınıfı, bir rezervasyonun ozelliklerini tanımlar ve yonetir.
+Rezervasyon sinifi, bir rezervasyonun ozelliklerini tanimlar ve yonetir.
 */
 
 public class Rezervasyon {
@@ -12,24 +12,24 @@ public class Rezervasyon {
 	private int rezervasyon_id;
 	/**
 
-	Rezervasyon numarası.
+	Rezervasyon numarasi.
 	*/
 	private int rezervasyon_no;
 	/**
 
-	Rezervasyonun yapıldıgı tarih.
+	Rezervasyonun yapildigi tarih.
 	*/
 	private String rezervasyon_tarih;
 	/**
 
-	Rezervasyonun yapıldıgı koltuk numarası.
+	Rezervasyonun yapildigi koltuk numarasi.
 	*/
 	private int rezervasyon_koltukno;
-	/**Rezervasyon nesnesinin ozelliklerini belirten yapıcı metot.
+	/**Rezervasyon nesnesinin ozelliklerini belirten yapici metot.
 	@param rezervasyon_id Rezervasyonun benzersiz kimligi.
-	@param rezervasyon_no Rezervasyon numarası.
-	@param rezervasyon_tarih Rezervasyonun yapıldıgı tarih.
-	@param rezervasyon_koltukno Rezervasyonun yapıldıgı koltuk numarası.
+	@param rezervasyon_no Rezervasyon numarasi.
+	@param rezervasyon_tarih Rezervasyonun yapildigi tarih.
+	@param rezervasyon_koltukno Rezervasyonun yapildigi koltuk numarasi.
 	*/
     public Rezervasyon(int rezervasyon_id, int rezervasyon_no, String rezervasyon_tarih, int rezervasyon_koltukno) {
         this.rezervasyon_id = rezervasyon_id;
@@ -47,7 +47,7 @@ public class Rezervasyon {
     }
     /**
 
-    Yeni bir rezervasyon olusturur ve bilgilerini ekrana yazdırır.
+    Yeni bir rezervasyon olusturur ve bilgilerini ekrana yazdirir.
     */
     public void Rezervasyon_olustur() {
          Rezervasyon r1 = new Rezervasyon(rezervasyon_id,rezervasyon_no,rezervasyon_tarih,rezervasyon_koltukno);
@@ -59,18 +59,18 @@ public class Rezervasyon {
     
     /**
 
-    Verilen rezervasyon kimligine gore, rezervasyonu veritabanından bulur.
+    Verilen rezervasyon kimligine gore, rezervasyonu veritabanindan bulur.
     */
 
     public void Rezervasyon_bul() {
-    	// veritabanında rezervasyonu bul
+    	// veritabaninda rezervasyonu bul
     }
     /**
 
-    Verilen rezervasyon kimligine gore, rezervasyonu veritabanından siler.
+    Verilen rezervasyon kimligine gore, rezervasyonu veritabanindan siler.
     */
     public void Rezervasyon_sil() {
-    	// veritabanından rezervasyonu sil
+    	// veritabanindan rezervasyonu sil
     }
 
     /**
@@ -90,18 +90,18 @@ public class Rezervasyon {
         this.rezervasyon_id = rezervasyon_id;
     }
     /**
-     * Rezervasyonun numarasını getirir.
+     * Rezervasyonun numarasini getirir.
      *
-     * @return Rezervasyonun numarası.
+     * @return Rezervasyonun numarasi.
      */
 
     public int getRezervasyon_no() {
         return rezervasyon_no;
     }
     /**
-     * Rezervasyonun numarasını set eder.
+     * Rezervasyonun numarasini set eder.
      *
-     * @param rezervasyon_no Rezervasyonun yeni numarası.
+     * @param rezervasyon_no Rezervasyonun yeni numarasi.
      */
     public void setRezervasyon_no(int rezervasyon_no) {
         this.rezervasyon_no = rezervasyon_no;
@@ -126,18 +126,18 @@ public class Rezervasyon {
         this.rezervasyon_tarih = rezervasyon_tarih;
     }
     /**
-     * Rezervasyonun koltuk numarasını getirir.
+     * Rezervasyonun koltuk numarasini getirir.
      *
-     * @return Rezervasyonun koltuk numarası.
+     * @return Rezervasyonun koltuk numarasi.
      */
 
     public int getRezervasyon_koltukno() {
         return rezervasyon_koltukno;
     }
     /**
-     * Rezervasyonun koltuk numarasını set eder.
+     * Rezervasyonun koltuk numarasini set eder.
      *
-     * @param rezervasyon_koltukno Rezervasyonun yeni koltuk numarası.
+     * @param rezervasyon_koltukno Rezervasyonun yeni koltuk numarasi.
      */
     public void setRezervasyon_koltukno(int rezervasyon_koltukno) {
         this.rezervasyon_koltukno = rezervasyon_koltukno;

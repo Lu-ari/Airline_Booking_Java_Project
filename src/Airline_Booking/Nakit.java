@@ -1,19 +1,19 @@
 package Airline_Booking;
 
 /**
- * Nakit odeme yontemini temsil eden sınıf.
+ * Nakit odeme yontemini temsil eden sinif.
  */
 public class Nakit extends OdemeYontemi {
     
-    /** Nakit odemenin tutarı */
+    /** Nakit odemenin tutari */
     private int Nakit_tutar;
     
     /** Nakit odemenin para birimi tipi */
     private String Nakit_tipi;
 
     /**
-     * Nakit odeme nesnesi olusturma constructor'ı.
-     * @param tutar odeme tutarı
+     * Nakit odeme nesnesi olusturma constructor'i.
+     * @param tutar odeme tutari
      * @param tipi para birimi tipi
      */
     public Nakit(int tutar, String tipi) {
@@ -22,7 +22,7 @@ public class Nakit extends OdemeYontemi {
     }
 
     /**
-     * Nakit odeme detaylarını alır ve ekrana basar.
+     * Nakit odeme detaylarini alir ve ekrana basar.
      */
     public void Nakit_al() {
         // implementation for getting cash details
@@ -36,16 +36,16 @@ public class Nakit extends OdemeYontemi {
     }
 
     /**
-     * Nakit odemenin tutarını dondurur.
-     * @return odeme tutarı
+     * Nakit odemenin tutarini dondurur.
+     * @return odeme tutari
      */
     public int getNakit_tutar() {
         return Nakit_tutar;
     }
 
     /**
-     * Nakit odemenin tutarını ayarlar.
-     * @param nakit_tutar odeme tutarı
+     * Nakit odemenin tutarini ayarlar.
+     * @param nakit_tutar odeme tutari
      */
     public void setNakit_tutar(int nakit_tutar) {
         Nakit_tutar = nakit_tutar;

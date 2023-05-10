@@ -1,6 +1,6 @@
 package Airline_Booking;
 /**
- * Bilet arayuzu, bir bilet nesnesinin sahip olmasi gereken ozellikleri ve davranısları tanimlar.
+ * Bilet arayuzu, bir bilet nesnesinin sahip olmasi gereken ozellikleri ve davranislari tanimlar.
  */
 public interface Bilet {
     
@@ -33,7 +33,7 @@ public interface Bilet {
     void setBiletNo(int biletNo);
     
     /**
-     * Bilet fiyatını getirir.
+     * Bilet fiyatini getirir.
      *
      * @return Bilet fiyati
      */

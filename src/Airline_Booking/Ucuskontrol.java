@@ -5,17 +5,17 @@ import java.util.List;
 import Airline_Booking.Sefer;
 /**
 
-Ucak seferlerinin kontrolunu saglayan sınıf.
+Ucak seferlerinin kontrolunu saglayan sinif.
 
-Bu sınıf, ucusların gerceklestirilmesi sırasında medyator tasarım desenini kullanır.
+Bu sinif, ucuslarin gerceklestirilmesi sirasinda medyator tasarim desenini kullanir.
 
-Havalimanı nesnesi, tek ornegi olusturulabilen bir sınıftır ve bu sınıfın ornegi,
+Havalimani nesnesi, tek ornegi olusturulabilen bir siniftir ve bu sinifin ornegi,
 
-havalimanı kodunu icerir.
+havalimani kodunu icerir.
 
-Bu sınıf, ucusları kontrol etmek icin havalimanı kodlarını kullanır.
+Bu sinif, ucuslari kontrol etmek icin havalimani kodlarini kullanir.
 
-İstanbul Havalimanı kodu "IST" ve New York Havalimanı kodu "JFK" olarak ayarlanır.
+İstanbul Havalimani kodu "IST" ve New York Havalimani kodu "JFK" olarak ayarlanir.
 
 @see Havalimani
 
@@ -26,32 +26,32 @@ Bu sınıf, ucusları kontrol etmek icin havalimanı kodlarını kullanır.
 public class Ucuskontrol {
 
 	/**
-	 * Havalimanı nesnesi olusturmak icin kullanılan Singleton sınıfı.
+	 * Havalimani nesnesi olusturmak icin kullanilan Singleton sinifi.
 	 */
 private Havalimani havalimani = Havalimani.getInstance();
 
 /**
 
-Verilen ucak ve sefer parametrelerine gore ucusları kontrol eder.
+Verilen ucak ve sefer parametrelerine gore ucuslari kontrol eder.
 
 @param ucak Ucak nesnesi
 
 @param sefer Sefer nesnesi
 */
 public void kontrolUcus(Ucak ucak, Sefer sefer) {
-// Ucusları kontrol etmek icin medyator tasarım deseninin uygulanması
+// Ucuslari kontrol etmek icin medyator tasarim deseninin uygulanmasi
 
-// Havalimani kodu burada kullanılarak ucusların kontrolu saglanır
+// Havalimani kodu burada kullanilarak ucuslarin kontrolu saglanir
 String havalimaniKodu = havalimani.getirHavalimaniKodu();
 
-// İstanbul Havalimanı kodu "IST" olarak ayarlanır
+// İstanbul Havalimani kodu "IST" olarak ayarlanir
 Havalimani istanbulAirport = Havalimani.getInstance();
 istanbulAirport.setHavalimaniKodu("IST");
 
-// New York Havalimanı kodu "JFK" olarak ayarlanır
+// New York Havalimani kodu "JFK" olarak ayarlanir
 Havalimani newYorkAirport = Havalimani.getInstance();
 newYorkAirport.setHavalimaniKodu("JFK");
 
-// Havalimanı bilgisi basılacak (burada implementasyon yok)
+// Havalimani bilgisi basilacak (burada implementasyon yok)
 }
 }

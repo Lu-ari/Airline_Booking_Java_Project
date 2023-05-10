@@ -1,31 +1,31 @@
 package Airline_Booking;
 
 /**
- * Kredi kartı odeme yontemini temsil eden sınıf.
+ * Kredi karti odeme yontemini temsil eden sinif.
  */
 public class KrediKarti extends OdemeYontemi {
 
     /**
-     * Kredi kartı numarasını tutan degisken.
+     * Kredi karti numarasini tutan degisken.
      */
     private int KrediKarti_no;
 
     /**
-     * Kredi kartı tipini tutan degisken.
+     * Kredi karti tipini tutan degisken.
      */
     private String KrediKarti_tipi;
 
     /**
-     * Kredi kartı tutarını tutan degisken.
+     * Kredi karti tutarini tutan degisken.
      */
     private int KrediKarti_tutar;
 
     /**
-     * KrediKarti sınıfı icin parametreli yapıcı metod.
+     * KrediKarti sinifi icin parametreli yapici metod.
      *
-     * @param no    Kredi kartı numarası.
-     * @param tipi  Kredi kartı tipi.
-     * @param tutar Kredi kartı tutarı.
+     * @param no    Kredi karti numarasi.
+     * @param tipi  Kredi karti tipi.
+     * @param tutar Kredi karti tutari.
      */
     public KrediKarti(int no, String tipi, int tutar) {
         this.KrediKarti_no = no;
@@ -34,61 +34,61 @@ public class KrediKarti extends OdemeYontemi {
     }
 
     /**
-     * Kredi kartı numarasını donduren metod.
+     * Kredi karti numarasini donduren metod.
      *
-     * @return Kredi kartı numarası.
+     * @return Kredi karti numarasi.
      */
     public int getKrediKarti_no() {
         return KrediKarti_no;
     }
 
     /**
-     * Kredi kartı numarasını ayarlayan metod.
+     * Kredi karti numarasini ayarlayan metod.
      *
-     * @param krediKarti_no Kredi kartı numarası.
+     * @param krediKarti_no Kredi karti numarasi.
      */
     public void setKrediKarti_no(int krediKarti_no) {
         this.KrediKarti_no = krediKarti_no;
     }
 
     /**
-     * Kredi kartı tipini donduren metod.
+     * Kredi karti tipini donduren metod.
      *
-     * @return Kredi kartı tipi.
+     * @return Kredi karti tipi.
      */
     public String getKrediKarti_tipi() {
         return KrediKarti_tipi;
     }
 
     /**
-     * Kredi kartı tipini ayarlayan metod.
+     * Kredi karti tipini ayarlayan metod.
      *
-     * @param krediKarti_tipi Kredi kartı tipi.
+     * @param krediKarti_tipi Kredi karti tipi.
      */
     public void setKrediKarti_tipi(String krediKarti_tipi) {
         this.KrediKarti_tipi = krediKarti_tipi;
     }
 
     /**
-     * Kredi kartı tutarını donduren metod.
+     * Kredi karti tutarini donduren metod.
      *
-     * @return Kredi kartı tutarı.
+     * @return Kredi karti tutari.
      */
     public int getKrediKarti_tutar() {
         return KrediKarti_tutar;
     }
 
     /**
-     * Kredi kartı tutarını ayarlayan metod.
+     * Kredi karti tutarini ayarlayan metod.
      *
-     * @param krediKarti_tutar Kredi kartı tutarı.
+     * @param krediKarti_tutar Kredi karti tutari.
      */
     public void setKrediKarti_tutar(int krediKarti_tutar) {
         this.KrediKarti_tutar = krediKarti_tutar;
     }
 
     /**
-     * Kredi kartı bilgilerini alarak ekrana yazdıran metod.
+     * Kredi karti bilgilerini alarak ekrana yazdiran metod.
      */
 
     public void KrediKarti_al() {
@@ -96,11 +96,11 @@ public class KrediKarti extends OdemeYontemi {
     	
     	  KrediKarti krediKarti = new KrediKarti(KrediKarti_no, KrediKarti_tipi, KrediKarti_tutar);
           
-    	System.out.println("**************************Kredi Kartı Bilgileri:****************************************");
-        System.out.println("Kredi Kartı No: " + getKrediKarti_no());
-        System.out.println("Kredi Kartı Tipi: " + getKrediKarti_tipi());
-        System.out.println("Kredi Kartı Tutar: " + getKrediKarti_tutar());
-        System.out.println("**************************Kredi Kartı Bilgileri:****************************************");
+    	System.out.println("**************************Kredi Karti Bilgileri:****************************************");
+        System.out.println("Kredi Karti No: " + getKrediKarti_no());
+        System.out.println("Kredi Karti Tipi: " + getKrediKarti_tipi());
+        System.out.println("Kredi Karti Tutar: " + getKrediKarti_tutar());
+        System.out.println("**************************Kredi Karti Bilgileri:****************************************");
         System.out.println("");
     }
 }

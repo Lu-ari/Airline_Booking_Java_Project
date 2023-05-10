@@ -19,12 +19,12 @@ public class Musteri {
     private int musteri_id;
 
     /**
-     * Musterinin adı.
+     * Musterinin adi.
      */
     private String musteri_adi;
 
     /**
-     * Musterinin kullanıcı adı.
+     * Musterinin kullanici adi.
      */
     private String musteri_kulladi;
 
@@ -44,7 +44,7 @@ public class Musteri {
     private String musteri_adres;
 
     /**
-     * Musterinin telefon numarası.
+     * Musterinin telefon numarasi.
      */
     private int musteri_tel;
 
@@ -60,15 +60,15 @@ public class Musteri {
 
     /**
 
-    Musteri sınıfı, musteri bilgilerini tutmak icin kullanılır.
+    Musteri sinifi, musteri bilgilerini tutmak icin kullanilir.
     */
     public static ArrayList<Musteri> customers = new ArrayList<>();
     
     /**
-     * Builder tasarım deseninde kullanılan constructor.
+     * Builder tasarim deseninde kullanilan constructor.
      * Musteri nesnesi olusturur ve builder nesnesinden gelen verileri kullanarak degiskenlerini ayarlar.
      *
-     * @param builder Musteri nesnesi olusturmak icin kullanılan builder nesnesi.
+     * @param builder Musteri nesnesi olusturmak icin kullanilan builder nesnesi.
      */
    
     private Musteri(Builder builder) {
@@ -84,7 +84,7 @@ public class Musteri {
     }
     
     /**
-     * Builder tasarım deseni kullanılarak Musteri nesnesi olusturmak icin kullanılan Builder sınıfı.
+     * Builder tasarim deseni kullanilarak Musteri nesnesi olusturmak icin kullanilan Builder sinifi.
      */
     public static class Builder {
         /**
@@ -93,12 +93,12 @@ public class Musteri {
         private int musteri_id;
 
         /**
-         * Musteri adı
+         * Musteri adi
          */
         private String musteri_adi;
 
         /**
-         * Musteri kullanıcı adı
+         * Musteri kullanici adi
          */
         private String musteri_kulladi;
 
@@ -118,7 +118,7 @@ public class Musteri {
         private String musteri_adres;
 
         /**
-         * Musteri telefon numarası
+         * Musteri telefon numarasi
          */
         private int musteri_tel;
 
@@ -142,8 +142,8 @@ public class Musteri {
             return this;
         }
         /**
-         * Musteri adını ayarlar.
-         * @param musteri_adi Musteri adı.
+         * Musteri adini ayarlar.
+         * @param musteri_adi Musteri adi.
          * @return Builder nesnesi.
          */
         public Builder musteri_adi(String musteri_adi) {
@@ -151,8 +151,8 @@ public class Musteri {
             return this;
         }
         /**
-         * Musteri kullanıcı adını ayarlar.
-         * @param musteri_kulladi Musteri kullanıcı adı.
+         * Musteri kullanici adini ayarlar.
+         * @param musteri_kulladi Musteri kullanici adi.
          * @return Builder nesnesi.
          */
         public Builder musteri_kulladi(String musteri_kulladi) {
@@ -191,8 +191,8 @@ public class Musteri {
             return this;
         }
         /**
-         * Musteri telefon numarasını ayarlar.
-         * @param musteri_tel Musteri telefon numarası.
+         * Musteri telefon numarasini ayarlar.
+         * @param musteri_tel Musteri telefon numarasi.
          * @return Builder nesnesi.
          */
         public Builder musteri_tel(int musteri_tel) {
@@ -235,7 +235,7 @@ public class Musteri {
         System.out.println("");
         System.out.println("****************Musteri Bilgileri************");
         System.out.println("Musteri Adi: " + customer.musteri_adi + " (ID: " + customer.musteri_id + ")");
-        System.out.println("Musteri Kullanici Adı: " + customer.musteri_kulladi + " (Mail Adresi: " + customer.musteri_mail + ")");
+        System.out.println("Musteri Kullanici Adi: " + customer.musteri_kulladi + " (Mail Adresi: " + customer.musteri_mail + ")");
         System.out.println("****************Musteri Bilgileri************");
         System.out.println("");
         
@@ -270,7 +270,7 @@ public class Musteri {
                 return;
             }
         }
-        System.out.println("Musteri ID ile bulunamadı: " + musteri_id);
+        System.out.println("Musteri ID ile bulunamadi: " + musteri_id);
     }
     /**
 
@@ -291,11 +291,11 @@ public class Musteri {
         }
         
         if (customer == null) {
-            System.out.println("Musteri bulunamadı.");
+            System.out.println("Musteri bulunamadi.");
             return;
         }
         
-        System.out.print("Yeni musterinin adını girim: ");
+        System.out.print("Yeni musterinin adini girim: ");
         String newName = input.next();
         customer.musteri_adi = newName;
         System.out.println("");
@@ -304,10 +304,10 @@ public class Musteri {
     }
     
     /**
-     * Bu sınıf, Airline Booking System'da musteri bilgilerini yonetmek icin kullanılır.
-     * Main metodu, uygulamayı baslatır ve kullanıcıya gerekli secenekleri sunar.
+     * Bu sinif, Airline Booking System'da musteri bilgilerini yonetmek icin kullanilir.
+     * Main metodu, uygulamayi baslatir ve kullaniciya gerekli secenekleri sunar.
      * 
-     * @param args Komut satırından gecilen argumanlar.
+     * @param args Komut satirindan gecilen argumanlar.
      */
    
     public static void main(String[] args) {
@@ -332,38 +332,38 @@ public class Musteri {
     	sefer.seferYazdir(sefer);
     	
         Ucak ucak = new Ucak(1, "TK1233", "Boeing", "737-800", "Dar Govde", 156);
-        Ucak ucak2 = ucak.clone();  //*****2.Ucak klonlandı 
+        Ucak ucak2 = ucak.clone();  //*****2.Ucak klonlandi 
     
      ucak.ucakYazdir(ucak);
    
      
        
         
-        if (ucak == null) {System.out.println("Ucak Bulunamadı....");
+        if (ucak == null) {System.out.println("Ucak Bulunamadi....");
         }
         else {
         	
-        	//Singelton class datası yazdırılıyor
+        	//Singelton class datasi yazdiriliyor
         	Havalimani istanbulAirport = Havalimani.getInstance();
         	   istanbulAirport.setHavalimaniKodu("IST");
         	   System.out.println("********************************************************");
-        	   System.out.println("Havalimanı kodu  Istanbul Havalimanı icin: " + istanbulAirport.getirHavalimaniKodu());
+        	   System.out.println("Havalimani kodu  Istanbul Havalimani icin: " + istanbulAirport.getirHavalimaniKodu());
         	   System.out.println("********************************************************");
         	
-        // Ucus Kontrol Mediator Class ile kontrol saglanıyor
+        // Ucus Kontrol Mediator Class ile kontrol saglaniyor
         Ucuskontrol ucuskontrol = new Ucuskontrol();
         ucuskontrol.kontrolUcus(ucak, sefer);}
 
         // Print flight information
         
-        //Odeme ve odeme yotemi ve bilet'in alınmıstır
+        //Odeme ve odeme yotemi ve bilet'in alinmistir
         Factory factory = new Factory();
         Odeme odeme = new Odeme(factory);
         odeme.Odeme_kredikartihesapla("kredi_karti");
         
         
         
-        //Odeme yapıldı ise rezervasyonu gosterme
+        //Odeme yapildi ise rezervasyonu gosterme
         if (odeme.equals(factory)==true) {
        
         Rezervasyon rezervasyon = new Rezervasyon(1, 123, "2023-05-04", 12);
@@ -389,7 +389,7 @@ public class Musteri {
     	sefer2.seferYazdir(sefer2);
        
         
-        //*****2.Ucak klonlandı ve id ile koltuk sayısı degerleri guncellendi***
+        //*****2.Ucak klonlandi ve id ile koltuk sayisi degerleri guncellendi***
         
         
        
@@ -397,30 +397,30 @@ public class Musteri {
         ucak2.setUcak_koltuksayisi(200);
         ucak2.ucakYazdir(ucak2);
         
-        if (ucak2 == null) {System.out.println("Ucak Bulunamadı....");
+        if (ucak2 == null) {System.out.println("Ucak Bulunamadi....");
         }
         else {
         	
-        	//Singelton class datası yazdırılıyor
+        	//Singelton class datasi yazdiriliyor
         	Havalimani istanbulAirport = Havalimani.getInstance();
      	   istanbulAirport.setHavalimaniKodu("JFK");
      	   System.out.println("********************************************************");
-     	   System.out.println("Havalimanı kodu  John F KENEDY Havalimanı icin: " + istanbulAirport.getirHavalimaniKodu());
+     	   System.out.println("Havalimani kodu  John F KENEDY Havalimani icin: " + istanbulAirport.getirHavalimaniKodu());
      	   System.out.println("********************************************************");
      	
-        // Ucus Kontrol Mediator Class ile kontrol saglanıyor
+        // Ucus Kontrol Mediator Class ile kontrol saglaniyor
         Ucuskontrol ucuskontrol2 = new Ucuskontrol();
         ucuskontrol2.kontrolUcus(ucak2, sefer2);}
 
    
         
-        //Odeme ve odeme yotemi ve biletalınmıstır
+        //Odeme ve odeme yotemi ve biletalinmistir
         Factory factory1 = new Factory();
         Odeme odeme1 = new Odeme(factory1);
         odeme1.Odeme_nakithesapla("Nakit");
         
         
-      //Odeme yapıldı ise rezervasyonu gosterme
+      //Odeme yapildi ise rezervasyonu gosterme
         if (odeme.equals(factory)==true) {
        
         Rezervasyon rezervasyon = new Rezervasyon(3, 123, "2023-05-03", 1);

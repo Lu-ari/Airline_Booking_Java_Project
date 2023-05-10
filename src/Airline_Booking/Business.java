@@ -1,12 +1,12 @@
 package Airline_Booking;
 
 /**
- * Business sınıfı, Bilet arayüzünü uygular ve Business seyahat sınıfı biletlerinin ozelliklerini tutar.
+ * Business sinifi, Bilet arayuzunu uygular ve Business seyahat sinifi biletlerinin ozelliklerini tutar.
  */
 public class Business implements Bilet {
 	
 	   /**
-     * Business seyahat sınıfının VIP ozelligini tutar.
+     * Business seyahat sinifinin VIP ozelligini tutar.
      */
     private String Business_vip;
 
@@ -16,12 +16,12 @@ public class Business implements Bilet {
     private int biletId;
 
     /**
-     * Bilet numarasını tutar.
+     * Bilet numarasini tutar.
      */
     private int biletNo;
 
     /**
-     * Biletin fiyatını tutar.
+     * Biletin fiyatini tutar.
      */
     private int biletFiyat;
 
@@ -31,15 +31,15 @@ public class Business implements Bilet {
     private String biletTarih;
 
     /**
-     * Biletin koltuk numarasını tutar.
+     * Biletin koltuk numarasini tutar.
      */
     private int biletKoltukNo;
 	
 	
     /**
-     * Business sınıfının yapıcı metodu, Business seyahat sınıfı biletlerinin VIP ozelligini ayarlar.
+     * Business sinifinin yapici metodu, Business seyahat sinifi biletlerinin VIP ozelligini ayarlar.
      *
-     * @param vip Business seyahat sınıfının VIP ozelligi
+     * @param vip Business seyahat sinifinin VIP ozelligi
      */
 	
     public Business(String vip) {
@@ -47,20 +47,20 @@ public class Business implements Bilet {
     }
 
     /**
-     * Bilet_guncelle metodu, Bilet arayüzünden uygulanır.
-     * Bu sınıfta henüz bir güncelleme islemi yapılmamaktadır.
+     * Bilet_guncelle metodu, Bilet arayuzunden uygulanir.
+     * Bu sinifta henuz bir guncelleme islemi yapilmamaktadir.
      * 
      *
      */
     @Override
     public void Bilet_guncelle() {
-        // Business sınıfı icin Bilet_guncelle metodunun uygulaması
-        // henüz yapılmamıstır.
+        // Business sinifi icin Bilet_guncelle metodunun uygulamasi
+        // henuz yapilmamistir.
     }
 
     /**
-     * Bilet_olustur metodu, Bilet arayüzünden uygulanır.
-     * Bu sınıfta yeni bir Business bilet olusturulur ve ozellikleri set edilir.
+     * Bilet_olustur metodu, Bilet arayuzunden uygulanir.
+     * Bu sinifta yeni bir Business bilet olusturulur ve ozellikleri set edilir.
      */
     @Override
     public void Bilet_olustur() {
@@ -82,13 +82,13 @@ public class Business implements Bilet {
     }
 
     /**
-     * Bilet_sil metodu, Bilet arayüzünden uygulanır.
-     * Bu sınıfta henüz bir silme islemi yapılmamaktadır.
+     * Bilet_sil metodu, Bilet arayuzunden uygulanir.
+     * Bu sinifta henuz bir silme islemi yapilmamaktadir.
      */
     @Override
     public void Bilet_sil() {
-        // Business sınıfı icin Bilet_sil metodunun uygulaması
-        // henüz yapılmamıstır.
+        // Business sinifi icin Bilet_sil metodunun uygulamasi
+        // henuz yapilmamistir.
     }
 
     /**
@@ -120,9 +120,9 @@ public class Business implements Bilet {
         	    }
 
         	    /**
-        	     * Bilet numarasını ayarlar.
+        	     * Bilet numarasini ayarlar.
         	     *
-        	     * @param biletNo Yeni Bilet numarası
+        	     * @param biletNo Yeni Bilet numarasi
         	     */
         	    @Override
         	    public void setBiletNo(int biletNo) {
@@ -130,9 +130,9 @@ public class Business implements Bilet {
         	    }
 
         	    /**
-        	     * Bilet fiyatını getirir.
+        	     * Bilet fiyatini getirir.
         	     *
-        	     * @return Bilet fiyatı
+        	     * @return Bilet fiyati
         	     */
         	    @Override
         	    public int getBiletFiyat() {
@@ -140,9 +140,9 @@ public class Business implements Bilet {
         	    }
 
         	    /**
-        	     * Bilet fiyatını ayarlar.
+        	     * Bilet fiyatini ayarlar.
         	     *
-        	     * @param biletFiyat Yeni Bilet fiyatı
+        	     * @param biletFiyat Yeni Bilet fiyati
         	     */
         	    @Override
         	    public void setBiletFiyat(int biletFiyat) {
@@ -170,9 +170,9 @@ public class Business implements Bilet {
         	    }
 
         	    /**
-        	     * Bilet koltuk numarasını getirir.
+        	     * Bilet koltuk numarasini getirir.
         	     *
-        	     * @return Bilet koltuk numarası
+        	     * @return Bilet koltuk numarasi
         	     */
         	    @Override
         	    public int getBiletKoltukNo() {
@@ -180,9 +180,9 @@ public class Business implements Bilet {
         	    }
 
         	    /**
-        	     * Bilet koltuk numarasını ayarlar.
+        	     * Bilet koltuk numarasini ayarlar.
         	     *
-        	     * @param biletKoltukNo Yeni Bilet koltuk numarası
+        	     * @param biletKoltukNo Yeni Bilet koltuk numarasi
         	     */
         	    @Override
         	    public void setBiletKoltukNo(int biletKoltukNo) {

@@ -1,47 +1,47 @@
 package Airline_Booking;
 
 /**
- * Ekonomi sınıfı, Bilet arayuzunu uygulayan bir sınıftır.
- * Ekonomi sınıfı, bilet olusturma, guncelleme ve silme islemleri yapabilir.
+ * Ekonomi sinifi, Bilet arayuzunu uygulayan bir siniftir.
+ * Ekonomi sinifi, bilet olusturma, guncelleme ve silme islemleri yapabilir.
  */
 public class Ekonomi implements Bilet {
 
     /**
-     * Ekonomi sınıfı icin ozellikler
+     * Ekonomi sinifi icin ozellikler
      */
 	/**
-	 * Ekonomik ekstra bagaj tutarını tutar.
+	 * Ekonomik ekstra bagaj tutarini tutar.
 	 */
 	private String Ekonomik_ekstrabagaj;
 
 	/**
-	 * Biletin ID numarasını tutar.
+	 * Biletin ID numarasini tutar.
 	 */
 	private int biletId;
 
 	/**
-	 * Bilet numarasını tutar.
+	 * Bilet numarasini tutar.
 	 */
 	private int biletNo;
 
 	/**
-	 * Biletin fiyatını tutar.
+	 * Biletin fiyatini tutar.
 	 */
 	private int biletFiyat;
 
 	/**
-	 * Biletin satın alındıgı tarihi tutar.
+	 * Biletin satin alindigi tarihi tutar.
 	 */
 	private String biletTarih;
 
 	/**
-	 * Biletin koltuk numarasını tutar.
+	 * Biletin koltuk numarasini tutar.
 	 */
 	private int biletKoltukNo;
 	/**
-	 * Ekonomi sınıfının yapıcı metodu, Ekonomi seyahat sınıfı biletlerinin ekstra bagaj ozelligini ayarlar.
+	 * Ekonomi sinifinin yapici metodu, Ekonomi seyahat sinifi biletlerinin ekstra bagaj ozelligini ayarlar.
 	 *
-	 * @param ekstrabagaj Ekonomi seyahat sınıfının ekstra bagaj ozelligi
+	 * @param ekstrabagaj Ekonomi seyahat sinifinin ekstra bagaj ozelligi
 	 */
 
    
@@ -50,17 +50,17 @@ public class Ekonomi implements Bilet {
     }
     
     /**
-     * Bilet_guncelle metodu, Bilet arayuzunden uygulanır
-     * Ekonomi sınıfı icin ozel bir uygulama yapar.
+     * Bilet_guncelle metodu, Bilet arayuzunden uygulanir
+     * Ekonomi sinifi icin ozel bir uygulama yapar.
      */
     @Override
     public void Bilet_guncelle() {
-        // Ekonomi sınıfına ozel Bilet_guncelle uygulaması
+        // Ekonomi sinifina ozel Bilet_guncelle uygulamasi
     }
 
     /**
-     * Bilet_olustur metodu, Bilet arayuzunden uygulanır
-     * Ekonomi sınıfı icin ozel bir uygulama yapar.
+     * Bilet_olustur metodu, Bilet arayuzunden uygulanir
+     * Ekonomi sinifi icin ozel bir uygulama yapar.
      */
     @Override
     public void Bilet_olustur() {
@@ -83,16 +83,16 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Bilet_sil metodu, Bilet arayuzunden uygulanır
-     * Ekonomi sınıfı icin ozel bir uygulama yapar.
+     * Bilet_sil metodu, Bilet arayuzunden uygulanir
+     * Ekonomi sinifi icin ozel bir uygulama yapar.
      */
     @Override
     public void Bilet_sil() {
-        // Ekonomi sınıfına ozel Bilet_sil uygulaması
+        // Ekonomi sinifina ozel Bilet_sil uygulamasi
     }
 
     /**
-     * Getter ve Setter metodları
+     * Getter ve Setter metodlari
      */
     /**
      * Biletin ID'sini getirir.
@@ -113,8 +113,8 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Bilet numarasını getirir.
-     * @return Bilet numarası.
+     * Bilet numarasini getirir.
+     * @return Bilet numarasi.
      */
     @Override
     public int getBiletNo() {
@@ -122,8 +122,8 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Bilet numarasını ayarlar.
-     * @param biletNo Bilet numarası.
+     * Bilet numarasini ayarlar.
+     * @param biletNo Bilet numarasi.
      */
     @Override
     public void setBiletNo(int biletNo) {
@@ -131,8 +131,8 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Bilet fiyatını getirir.
-     * @return Bilet fiyatı.
+     * Bilet fiyatini getirir.
+     * @return Bilet fiyati.
      */
     @Override
     public int getBiletFiyat() {
@@ -140,8 +140,8 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Bilet fiyatını ayarlar.
-     * @param biletFiyat Bilet fiyatı.
+     * Bilet fiyatini ayarlar.
+     * @param biletFiyat Bilet fiyati.
      */
     @Override
     public void setBiletFiyat(int biletFiyat) {
@@ -167,8 +167,8 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Biletin koltuk numarasını getirir.
-     * @return Biletin koltuk numarası.
+     * Biletin koltuk numarasini getirir.
+     * @return Biletin koltuk numarasi.
      */
     @Override
     public int getBiletKoltukNo() {
@@ -176,8 +176,8 @@ public class Ekonomi implements Bilet {
     }
 
     /**
-     * Biletin koltuk numarasını ayarlar.
-     * @param biletKoltukNo Biletin koltuk numarası.
+     * Biletin koltuk numarasini ayarlar.
+     * @param biletKoltukNo Biletin koltuk numarasi.
      */
     @Override
     public void setBiletKoltukNo(int biletKoltukNo) {

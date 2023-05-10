@@ -1,7 +1,7 @@
 package Airline_Booking;
 
 /**
- * Soyut fabrika sinifi, bilet ve odeme yontemi nesnelerinin yaratilmas icin arayuz saglar.
+ * Soyut fabrika sinifi, bilet ve odeme yontemi nesnelerinin yaratilmasi icin arayuz saglar.
  */
 public abstract class AbstractFactory {
     

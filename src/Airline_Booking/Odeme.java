@@ -1,17 +1,17 @@
 package Airline_Booking;
 
 /**
- * Bu sınıf, odemelerin olusturulması ve odeme islemlerinin yapılması icin kullanılır.
- * Odeme sınıfı, bir Factory nesnesi alarak odeme islemlerinde kullanılacak odeme yontemlerini olusturmak icin kullanılır.
+ * Bu sinif, odemelerin olusturulmasi ve odeme islemlerinin yapilmasi icin kullanilir.
+ * Odeme sinifi, bir Factory nesnesi alarak odeme islemlerinde kullanilacak odeme yontemlerini olusturmak icin kullanilir.
  */
 public class Odeme {
 	/**
-	 * Odeme sınıfında odeme islemleri icin kullanılan odeme ID'si.
+	 * Odeme sinifinda odeme islemleri icin kullanilan odeme ID'si.
 	 */
 	private int Odeme_id;
 
 	/**
-	 * odeme tutarı.
+	 * odeme tutari.
 	 */
 	private int Odeme_tutar;
 
@@ -21,25 +21,25 @@ public class Odeme {
 	private String Odeme_tarih;
 
 	/**
-	 * Factory nesnesi, farklı odeme turleri icin odeme yapısı olusturmak icin kullanılır.
+	 * Factory nesnesi, farkli odeme turleri icin odeme yapisi olusturmak icin kullanilir.
 	 */
 	private Factory factory;
 
     /**
-     * Odeme sınıfı kurucu fonksiyonu, Factory nesnesi alır.
-     * @param factory odeme islemlerinde kullanılacak odeme yontemlerini olusturmak icin kullanılacak Factory nesnesi.
+     * Odeme sinifi kurucu fonksiyonu, Factory nesnesi alir.
+     * @param factory odeme islemlerinde kullanilacak odeme yontemlerini olusturmak icin kullanilacak Factory nesnesi.
      */
     public Odeme(Factory factory) {
         this.factory = factory;
     }
     
     /**
-     * Kredi kartı ile odeme yapmak icin kullanılan fonksiyon.
-     * @param yontem odeme yontemi olarak kullanılacak string degeri alır.
+     * Kredi karti ile odeme yapmak icin kullanilan fonksiyon.
+     * @param yontem odeme yontemi olarak kullanilacak string degeri alir.
      */
     public void Odeme_kredikartihesapla(String yontem) {
         OdemeYontemi odemeYontemi = factory.createOdemeYontemi(yontem);
-        // Odeme objesi ile bilet hesaplanıyor
+        // Odeme objesi ile bilet hesaplaniyor
         Ekonomi ekonomi =new Ekonomi("10kg");
         ekonomi.Bilet_olustur();
         KrediKarti krediKarti = new KrediKarti(123456789, "Visa", 500);
@@ -47,12 +47,12 @@ public class Odeme {
     }
     
     /**
-     * Nakit para ile odeme yapmak icin kullanılan fonksiyon.
-     * @param yontem odeme yontemi olarak kullanılacak string degeri alır.
+     * Nakit para ile odeme yapmak icin kullanilan fonksiyon.
+     * @param yontem odeme yontemi olarak kullanilacak string degeri alir.
      */
     public void Odeme_nakithesapla(String yontem) {
         OdemeYontemi odemeYontemi = factory.createOdemeYontemi(yontem);
-        // Odeme objesi ile bilet hesaplanıyor
+        // Odeme objesi ile bilet hesaplaniyor
         Business business =new Business("30 kg");
         business.Bilet_olustur();
         Nakit Nakit = new Nakit(6000, "TL");
@@ -76,7 +76,7 @@ public class Odeme {
     }
 
     /**
-     *  Odeme_tutar odeme tutarını donduren getter fonksiyonu.
+     *  Odeme_tutar odeme tutarini donduren getter fonksiyonu.
      * @return odeme islemine ait tutar degeri.
      */
     public int getOdeme_tutar() {
@@ -84,7 +84,7 @@ public class Odeme {
     }
 
     /**
-    @param Odeme_tutar odeme islemine ait tutarı temsil eden int degeri alır.
+    @param Odeme_tutar odeme islemine ait tutari temsil eden int degeri alir.
     */
     public void setOdeme_tutar(int Odeme_tutar) {
     this.Odeme_tutar = Odeme_tutar;
@@ -101,7 +101,7 @@ public class Odeme {
 
     /**
      * odeme tarihini set eden setter fonksiyonu.
-     * @param Odeme_tarih odeme islemine ait tarihi temsil eden String degeri alır.
+     * @param Odeme_tarih odeme islemine ait tarihi temsil eden String degeri alir.
      */
     public void setOdeme_tarih(String Odeme_tarih) {
         this.Odeme_tarih = Odeme_tarih;

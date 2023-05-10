@@ -3,25 +3,25 @@ package Airline_Booking;
 
 /**
 
-Bu sınıf, odeme yontemlerinin temel ozelliklerini icerir.
-odeme yontemi adını saklar.
+Bu sinif, odeme yontemlerinin temel ozelliklerini icerir.
+odeme yontemi adini saklar.
 */
 
 public abstract class  OdemeYontemi {
 	
 	/**
-	 * odeme yontemi bilgisini saklayan korumalı degisken.
+	 * odeme yontemi bilgisini saklayan korumali degisken.
 	 */
 	protected String OdemeYontemi;
 	
 /**
- * odeme yontemi alınır
+ * odeme yontemi alinir
  * */
     public void OdemeYontemi_al() {
     	
     }
     /**
-     * odeme yontemini gondermek icin kullanılır.
+     * odeme yontemini gondermek icin kullanilir.
     */
 
     public void OdemeYontemi_gonder() {
